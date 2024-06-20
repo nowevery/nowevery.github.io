@@ -1,0 +1,155 @@
+<script src="header.js"></script>
+<main class="inner">
+	<h1 class="font35">Request A Quote</h1>
+	<div class="text">To request your quote, please fill in the form below and press the SUBMIT button.</div>
+	<div class="text"><span class="tip-icon">*</span> Note: These fields are required.</div>
+	<form class="form-box" id="commentForm" action="">
+		<div class="title">Form</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Company Name</div><input type="text" name="company_name" required  value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Contact Name</div><input type="text" name="name" required  value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Phone</div><input required  name="tel" value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Email</div><input type="email" name="email" placeholder="" required>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>How do you know GIGATEK?</div>
+			<label><input type="checkbox" name="fromWhare[]" id="fromWhare" value="Internet" required>Internet search</label>
+			<label><input type="checkbox" name="fromWhare[]" id="fromWhare" value="Recommend">Recommend </label>	
+			<label><input type="checkbox" name="fromWhare[]" id="fromWhare" value="Others">Others</label>
+			<textarea name="oth_comment" ></textarea>
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Please describe the application for this product.</div><textarea name="applyProduct" required></textarea>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>Expectation business method with Gigatek :</div>
+			<label><input type="checkbox" name="business_method[]" value="OEM" required>OEM</label>
+			<label><input type="checkbox" name="business_method[]" value="ODM">ODM</label>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>Is this project a new developing product in your firm ?</div>
+			<label><input type="radio" name="IsNewdevPdt" value="Y" required>Yes</label>
+			<label><input type="radio" name="IsNewdevPdt" value="N">No</label>
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Comments</div>
+			<!-- <input type="textarea" placeholder="Input Comments" name="content"> -->
+			<textarea name="content" required></textarea>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>Please select which kind engineering information would be provided.</div>
+			<label><input type="checkbox" name="whkind_engineering[]" value="Gerber" required>Gerber</label>
+			<label><input type="checkbox" name="whkind_engineering[]" value="Drawing">Drawing </label>		
+			<label><input type="checkbox" name="whkind_engineering[]" value="BOM">BOM</label>				
+		</div>
+	<!-- 	<div class="row">
+			<div class="sub-title"><span class="tip-icon">*</span>Select files for upload:</div>
+		</div>
+		<div class="row file-box">
+			<div class="name">Gerber</div>
+			<div>
+				<label><input type="file" id="upload-1" onchange="handleFile()" class="hide"><span class="upload-1">Choose File</span></label>
+				<span id="file_name">No file chosen</span>				
+			</div>
+
+			<div class="name">Drawing</div>
+			<div>
+				<label><input type="file" id="upload-2" onchange="handleFile()" class="hide"><span class="upload-2">Choose File</span></label>
+				<span id="file_name2">No file chosen</span>				
+			</div>
+
+			<div class="name">BOM</div>
+			<div>
+				<label><input type="file" id="upload-3" onchange="handleFile()" class="hide"><span class="upload-3">Choose File</span></label>
+				<span id="file_name3">No file chosen</span>				
+			</div>
+
+
+		</div> -->
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Verification code</div>
+			<div class="code">
+				<input name="code" required onkeyup="this.value=this.value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+				<span>
+					<!-- <img src="SRC/images/verification_demo.jpg"><i class="fas fa-redo"></i> -->
+					<a href="javascript: void(0)" onClick="refresh_code();">
+						<img src="<?php echo base_url( $this->front_lang .'/request/code_img') ?>" id="verification_code" alt="">
+						<i class="fas fa-redo"></i></a>
+					</span>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="reset" class="btn">Rewrite</button>
+				<button type="submit" class="btn">Submit</button>
+			<!-- <input class="btn con_clear" type="reset" value="Rewrite">
+				<input class="btn" type="submit" value="Submit"> -->
+			</div>
+		</form>
+	</main>
+	<nav class="bread">
+		<div class="inner">
+			<a href="<?echo base_url();?>">Home</a><span class="bread-space">/</span>Request A Quote		
+		</div>
+
+	</nav>
+	<script src="footer.js"></script> 
+
+	<script type="text/javascript">   
+
+//表單送出的動作
+$(function() {
+	$('#commentForm').submit(function(event) {
+		event.preventDefault();
+		var formEl = $(this);			
+		// console.log(formEl.serialize());
+		if(!check_required()){
+			return false;
+		}
+
+		$.ajax({
+			type: 'POST',
+			url: '<?php echo base_url( $this->front_lang .'/request/create') ?>',
+			dataType: 'json',
+			data: formEl.serialize(),
+			success: function(data) {
+				
+				if (data == '送出成功') {
+					alert('Send Data Success!');
+					location.href = '<?php echo base_url( $this->front_lang ."/request") ?>';
+				}else if (data =='驗證碼錯誤!')
+				{
+					alert('Verification code is wrong!');
+				}else{
+					alert('Data Error!!');
+				}
+				// console.log(data);
+			},
+			error: function(e) {
+				console.log(e);
+				alert('系統忙碌中,請稍後再試!');
+			}
+		})
+	});
+});	
+
+</script>
+<script>
+	//更新檢查碼
+	function refresh_code() {
+		$('#verification_code').attr('src', '<?php echo base_url( $this->front_lang .'/request/code_img') ?>');
+	}
+
+	function check_required() {
+		if ($("label[class='error']:visible").length > 0  ) {
+			alert('whops!,some field is required.But it is blank.');
+			return false;
+		}
+		return true;
+	}
+</script>

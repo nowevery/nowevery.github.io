@@ -1,0 +1,178 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+  <div class="page-banner" style="background-image: url('images/demo/banner01.jpg')"></div>
+<!--TAB效果-->
+<link href="SRC/css/tab02.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').click(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+<!--//TAB效果-->
+  <main>
+    <!--bread-->
+    <div class="breadbox">
+      <ul class="bread-crumbs">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="products.html">產品展示</a></li>
+        <li>JL系列</li>
+      </ul>
+    </div>     
+    <!--bread end--> 
+    <section class="bg_gray3 wow fadeIn">
+      <div class="box-2 content">
+        <!--產品上半部資訊-->
+        <div class="proview_topbox">
+          <div class="left_img">    
+            <ul class="product-slick">
+              <li><a data-fancybox="images" href="images/demo/pd01.jpg"><img src="images/demo/pd01.jpg" alt="" /></a></li>
+              <li><a data-fancybox="images" href="images/demo/pd02.jpg"><img src="images/demo/pd02.jpg" alt="" /></a></li>
+              <li><a data-fancybox="images" href="images/demo/pd01.jpg"><img src="images/demo/pd01.jpg" alt="" /></a></li>
+              <li><a data-fancybox="images" href="images/demo/pd02.jpg"><img src="images/demo/pd02.jpg" alt="" /></a></li>
+              <li><a data-fancybox="images" href="images/demo/pd01.jpg"><img src="images/demo/pd01.jpg" alt="" /></a></li>
+            </ul>
+            <ul class="product-nav">
+              <li><img src="images/demo/pd01.jpg" alt="" /></li>
+              <li><img src="images/demo/pd02.jpg" alt="" /></li>
+              <li><img src="images/demo/pd01.jpg" alt="" /></li>
+              <li><img src="images/demo/pd02.jpg" alt="" /></li>
+              <li><img src="images/demo/pd01.jpg" alt="" /></li>
+            </ul>   
+          </div>          
+          <div class="right_info">   
+            <div class="no">JL-N0M-MSSF2</div> 
+            <h1 class="name">JL系列產品</h1>
+            <div class="txt">加工中心機大致能分成橫式、立式與龍門型3種類型。
+              最早開發的是稱為橫式的類型，簡單來說就是將安裝刀具的旋轉軸（主軸）往橫向（相對於地面為水平的方向）安裝的機種。相對於橫式，立式則是指旋轉軸為縱向的類型。<br><br>另一方面，門型（龍門型）的結構就像是架了一扇門，旋轉軸則朝下安裝在門的頂端。
+
+            </div> 
+          </div>              
+        </div>
+        <!--//產品上半部資訊-->   
+      </div>
+    </section>
+    <ul class="tabs">
+      <li><a href="#tab1">詳細介紹</a></li>
+      <li><a href="#tab2">尺寸圖</a></li>
+      <li><a href="#tab3">產品詢問</a></li>
+    </ul>
+    <section class="wow fadeIn">
+      <div class="abgne_tab">
+
+        <div class="tab_container">
+  		  <div id="tab1" class="tab_content">
+              <div class="user-editor">
+                <!--文字編輯器內容-->
+                <div class="w15">
+                  <div class="aboutbox">
+                   <div class="aleft">
+                    <div class="atitle" style="border:0;">JL系列產品</div>
+                    加工中心機大致能分成橫式、立式與龍門型3種類型。
+                    最早開發的是稱為橫式的類型，簡單來說就是將安裝刀具的旋轉軸（主軸）往橫向（相對於地面為水平的方向）安裝的機種。相對於橫式，立式則是指旋轉軸為縱向的類型。<br><br>另一方面，門型（龍門型）的結構就像是架了一扇門，旋轉軸則朝下安裝在門的頂端。
+                    <br><br>
+                    英國機械學家威利斯（Robert Willis）在其《機械學原理》（The Principles of Mechanism，1841年）所給的定義是：「任何機械（machine）都是由用各種不同方式連接起來的一組構件組成，使其一個構件運動，其餘構件將發生一定的運動，這些構件與最初運動之構件的相對運動關係取決於它們之間連接的性質。」德國機械學家勒洛（Franz Reuleaux）在其《理論運動學》（Theoretische Kinematik，Grundzüge einer Theorie des Maschienenwesens，1875年）中的定義為「機械是多個具有抵抗力之物體的組合體，其配置方式使得能夠藉助它們強迫自然界的機械力做功，同時伴隨著一定的確定運動。」
+                      </div>
+                      <div class="aright" style="margin-top: 20px;"><img src="images/demo/pro-a.jpg"></div>
+                  </div>
+
+
+                  <p class="r15" style="margin-top: 50px;">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1160px<br></p>
+                </div>
+                <!--文字編輯器內容-->
+              </div>
+  		  </div>
+          <div id="tab2" class="tab_content">
+            <div class="dimension center">
+              <a class="fancybox" href="images/demo/size.jpg"><img src="images/demo/size.jpg" alt="" /></a>
+            </div>
+		  </div>
+          <div id="tab3" class="tab_content">
+            <form action="javascript:void(0)">
+						<div class="contact-form02">
+							<ul class="styled-input">
+                <li>
+									<label class="label" for="name">姓名*</label>
+									<input type="text" id="name" placeholder="姓名*" />
+								</li>
+                                <li>
+									<label class="label" for="email">E-mail*</label>
+									<input type="text" id="email" placeholder="E-mail*" />
+								</li>	
+								<li>
+									<label class="label" for="tel">聯絡電話</label>
+									<input type="text" id="tel" placeholder="聯絡電話" />
+								</li>
+								<li>
+									<label class="label" for="content">內容*</label>
+									<textarea id="content" placeholder="內容*"></textarea>
+								</li>
+                <li>
+                  <label class="label" for="code">驗證碼</label>
+                  <input type="text" id="code" placeholder="驗證碼" />
+                </li>
+                <li class="contact-captcha">
+							      <img src="images/demo/code.png" />
+                </li>
+								<li style="text-align:center;">
+                  <input type="reset" class="btn-style01" value="重新填寫"/ onclick="if(confirm('確定重新填寫嗎?')) return true;else return false">
+                  <input type="submit" class="btn-style01" value="確認送出"/ onclick="if(confirm('確定送出嗎?')) return true;else return false"> 
+								</li>
+							</ul>
+						</div><!-- //contact-form -->
+            </form>
+		  </div>
+          
+ 
+        </div><!--tab_container end-->  
+      </div><!--abgne_tab end-->
+    </section>
+  </main>
+  <script src="_foot.js"></script>
+  
+<!--產品照片 -->
+<link rel="stylesheet" type="text/css" href="SRC/css/slick.css" />
+<link rel="stylesheet" type="text/css" href="SRC/css/slick-theme.css" />
+<script type="text/javascript" src="SRC/js/effect01.js"></script>
+	<script>
+		$(document).ready(function() {			
+			// product slick
+			$('.product-slick').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				fade: true,
+				dots: false,
+				arrows: true,
+				asNavFor: '.product-nav',
+			});
+			// product nav
+			$('.product-nav').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: false,
+				focusOnSelect: true,
+				asNavFor: '.product-slick',
+			});
+		});
+	</script>
+<!--//產品照片 --> 

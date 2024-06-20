@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+	.abgne_tab {
+		clear: left;
+		width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
+	ul.tabs {
+		width:100%;
+		height:auto; overflow: hidden;
+		text-align:center;
+		background:#cfcdc3;	
+	}
+	ul.tabs li {		
+		display:inline-block;
+	padding-bottom:0px;
+		
+	}
+	ul.tabs li a {
+	display:block;
+	margin:0 0px;
+	font-size:15px;
+	padding:12px 25px 20px;
+	line-height:1;
+	color:#45433f;
+	position:relative;		
+	}
+	ul.tabs li .tbox{ width:100%;}
+	ul.tabs li .tbox i{ width:100%; text-align:center; margin:5px 0 15px 0; font-size:28px;opacity: .8;}
+	ul.tabs li a:hover:after{
+	content:" ";
+	width: 0px;
+	height: 0px;
+	width: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #fff transparent;
+	
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-8px;
+}
+	ul.tabs li.active  {
+		color:#fff;
+	}
+	ul.tabs li.active a {
+		color:#fff;transition: .3s;    font-weight: 600;
+		background: #45433f;
+	}
+	ul.tabs li.active a:after{
+	content:" ";
+	width: 0px;
+	height: 0px;
+	width: 0;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #fff transparent;
+	
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-8px;
+}
+	ul.tabs li a:hover {
+		color: #66635b;transition: .3s;
+	}
+	ul.tabs li.active a:hover {
+		color: #66635b;
+	}
+	div.tab_container {
+		clear: left;
+		width:1160px; margin:0px auto; height:auto; overflow: hidden;
+	}
+	div.tab_container .tab_content {
+		width:100%; margin:80px auto; height:auto; overflow: hidden;
+	}
+@media only screen and (min-width: 0px) and (max-width: 510px){
+	ul.tabs li a:hover:after{
+	border-color: transparent transparent #e1e1e1 transparent;
+}
+	ul.tabs li.active a:after{
+	border-color: transparent transparent #e1e1e1 transparent;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 400px){
+	ul.tabs li a{
+	font-size:14px;
+	border-width: 0 5px 10px 5px;
+}
+}
+@media only screen and (min-width: 0px) and (max-width: 1230px){
+div.tab_container { width:90%;}
+}

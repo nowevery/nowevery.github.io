@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>鴻福食品工廠有限公司</title>
+    <link href="css/foundation.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript" lang="javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" lang="javascript" src="js/foundation.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sky-forms.css">
+    <style type="text/css">
+    form .row .row {
+        margin: 0px;
+
+    }
+
+    .bnt {
+        background-color: #000;
+        border: 1px solid #000;
+        padding: 6px 20px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        font-size: 14px;
+        font-family: 微軟正黑體;
+    }
+
+    .bnt:hover {
+        background-color: #fff;
+        color: #000;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .sky-form fieldset {
+        margin: 25px 0 8px 0;
+        font-family: '微軟正黑體' !important;
+    }
+
+    .sel_year,
+    .sel_month,
+    .sel_day {
+        display: inline-block;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .date-contact span {
+        position: relative;
+        top: -5px;
+        padding-left: 5px;
+    }
+
+    select {
+        padding: 0 .5rem;
+        border: 1px solid #cacaca;
+        margin: 0 0 1rem;
+    }
+
+    .sky-form footer {
+        padding: 0px 30px 20px 0;
+    }
+
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #999;
+    }
+
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #999;
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: #999;
+    }
+
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: #999;
+    }
+
+    .date-font {
+        max-width: 27px;
+        position: relative;
+        top: 8px;
+        font-size: 15px;
+      
+
+    }
+
+    .date-title {
+        max-width: 81px;
+        position: relative;
+        top: 2px;
+        font-size: 15px;
+      
+
+    }
+.sky-form .row {
+    margin: 0 0px;
+}
+    @media (max-width: 650px) {
+        .date-title {
+            max-width: 100%;
+            position: relative;
+            top: 2px;
+            font-size: 15px;
+          
+
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="o-wrapper" class="o-wrapper">
+        <div class="row head-top">
+            <div class="columns small-7 medium-5 logo"><a href="index.html"><img src="images/logo.svg"></a></div>
+            <div class="columns small-5 medium-7">
+                <div class="head-right">
+                    <div>
+                        <span><img src="images/user.svg" style="padding: 0 8px;width: 24px;"><a href="login.html">註冊</a>│<a href="login.html">登入</a></span>
+                         
+                        <span><a href=""><img src="images/eng.svg"></a></span>
+                        <span><a href=""><img src="images/fb.svg" style="max-width: 25px;"></a></span>
+                        <span><a href=""><img src="images/youtube.png" style="max-width:45px;"></a></span>
+                    </div>
+                    <div class="search-form">
+                        <div style="display: inline-block;">
+                            <input style="background-color: transparent;" type="text" placeholder="">
+                        </div>
+                        <div style="display: inline-block;position: relative;right: 5px;top: -1px;">
+                            <img src="images/zoom.svg" onclick="" style="width: 12px;vertical-align: inherit;">
+                        </div>
+                    </div>
+                </div>
+                <div class="c-buttons">
+                    <button id="c-button--slide-right" class="c-button"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns menu-top">
+                <div>
+                    <a href="product.html">產品介紹</a><img src="images/Slash.png">
+                    <a href="safety.html">安全安心</a><img src="images/Slash.png">
+                    <a href="news.html">樂食情報</a><img src="images/Slash.png">
+                     
+                    <a href="about.html">關於鴻福</a><img src="images/Slash.png">
+                    <a href="contact.html">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div class="columns pa ma-40">
+            <div class="row ">
+                <div class="columns">
+                    <div class="bread bread2"><a href=""><i class="fa fa-home" style="color:#D0121B"></i></a><span style="padding:0 5px;color:#8a8a8a">/</span><a href="">聯絡我們</a></div>
+                </div>
+                <div class="pa columns  Contents">
+                    <div class="small-12 medium-3 columns w-20">
+                        <div class="left-menu-title">聯絡我們</div>
+                        <ul class="accordion">
+                            <li class="accordion-item ">
+                                <a href="contact.html" class="accordion-title page-menu"><i class="fa fa-chevron-right"></i>聯絡我們</a>
+                            </li>
+                            <li class="accordion-item ">
+                                <a href="faq.html" class="accordion-title page-menu"><i class="fa fa-chevron-right"></i>常見問題</a>
+                            </li>
+                            <li class="accordion-item ">
+                                <a href="contact-page.html" class="accordion-title page-menu"><i class="fa fa-chevron-right"></i>徵才啟事</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small-12 medium-9 columns w-80">
+                        <div class="right-title">聯絡我們</div>
+                        <div class="sky-form">
+                            <fieldset>
+                                <div class="row" style="font-size: 14px;font-family: 微軟正黑體;margin-bottom: 12px;line-height: 30px;">
+                                    <i class="fa fa-arrow-circle-o-right" style="padding-right: 5px;"></i>如為急事，請以電話聯絡我們。電話：03-496-5799 (上班日08:00~12:00，13:00~17:00)。<br>
+                                    ※ 的標誌為必須輸入欄位，請務必輸入後，再按確認鈕。
+                                </div>
+                                <div class="row">
+                                    <section class="columns pa">
+                                        <label class="input">
+                                            <input name="" type="text" id="" class="required" placeholder="※ 聯絡標題">
+                                        </label>
+                                    </section>
+                                    <section class="columns pa">
+                                        <label class="textarea">
+                                            <textarea name="" rows="5" cols="20" id="CPC_msg" class="form-control required" placeholder="※ 想詢問的內容。"></textarea>
+                                        </label>
+                                    </section>
+                                    <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                    <section class="columns pa">
+                                        <label class="input">
+                                            <input name="" type="text" id="CPC_name" class="required" placeholder="商品名稱">
+                                        </label>
+                                    </section>
+                                    <section class="columns pa">
+                                        <label class="input">
+                                            <input name="ctl00$CPC$txtcontact" type="text" id="CPC_txtcontact" class="required" placeholder="商品狀態 ( 請寫下該商品的保管狀態、有無包裝、其他...等 )">
+                                        </label>
+                                    </section>
+                                </div>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row">
+                                    <section class="date-contact columns pa">
+                                        <label class="columns small-12 medium-2 pa date-title">有效期限　</label>
+                                        <div class="columns small-3 medium-2 pa">
+                                            <select class="sel_year" rel="2016"></select>
+                                        </div>
+                                        <div class="columns small-1 medium-1 pa date-font">
+                                            <span>年</span>
+                                        </div>
+                                        <div class="columns small-3 medium-2 pa"><select class="sel_month" rel="01"> </select></div>
+                                        <div class="columns small-1 medium-1 pa date-font">
+                                            <span>月</span>
+                                        </div>
+                                        <div class="columns small-3 medium-2 pa"> <select class="sel_day" rel="01"> </select></div>
+                                        <div class="columns small-1 medium-1 pa date-font" style="float: left;">
+                                            <span>日</span>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row">
+                                    <section class="date-contact columns pa">
+                                        <label class="columns small-12 medium-2 pa date-title">購入日期　</label>
+                                        <div class="columns small-3 medium-2 pa">
+                                            <select class="sel_year" rel="2016"></select>
+                                        </div>
+                                        <div class="columns small-1 medium-1 pa date-font">
+                                            <span>年</span>
+                                        </div>
+                                        <div class="columns small-3 medium-2 pa"><select class="sel_month" rel="01"> </select></div>
+                                        <div class="columns small-1 medium-1 pa date-font">
+                                            <span>月</span>
+                                        </div>
+                                        <div class="columns small-3 medium-2 pa"> <select class="sel_day" rel="01"> </select></div>
+                                        <div class="columns small-1 medium-1 pa date-font" style="float: left;">
+                                            <span>日</span>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row">
+                                    <section class="columns pa">
+                                        <label class="input">
+                                            <input name="ctl00$CPC$email" type="text" id="CPC_email" placeholder="購入店名">
+                                        </label>
+                                    </section>
+                                </div>
+                                <div class="row">
+                                    <section class="columns small-6 medium-6 pa">
+                                        <label class="input">
+                                            <input name="" type="text" id="CPC_email" placeholder="※ 姓名">
+                                        </label>
+                                    </section>
+                                    <section class="columns small-6 medium-6 ">
+                                        <div style="margin-top: 10px;margin-left: 12px;">
+                                            <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">男</label>
+                                            <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">女</label>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row">
+                                    <section class="columns small-12 medium-6" style="padding-left: 0;">
+                                        <label class="input">
+                                            <input name="" type="text" id="CPC_email" placeholder="※ 電話號碼">
+                                        </label>
+                                    </section>
+                                    <section class="columns small-12 medium-6 pa">
+                                        <label class="select" style="width:100%;    float: right;">
+                                            <select name="" id="">
+                                                <option value="10:00~12:00">希望聯絡時間帶</option>
+                                                <option value="10:00~12:00">10:00~12:00</option>
+                                                <option value="13:00~15:00">13:00~15:00</option>
+                                                <option value="15:00~17:00">15:00~17:00</option>
+                                                <option value="都可以">都可以</option>
+                                            </select>
+                                            <i style="right: 24px;"></i>
+                                        </label>
+                                    </section>
+                                </div>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row address">
+                                    <section class="columns small-12 medium-4 pa">
+                                        <label class="input">
+                                            <input name=" " type="text" id="CPC_zip" class="zipcode form-control addnumber" placeholder="※ 郵遞區號" style="width: 95%;"></input>
+                                        </label>
+                                    </section>
+                                    <section class="columns small-6 medium-4 pa">
+                                        <label class="select">
+                                            <select name="ctl00$CPC$city" id="CPC_city" class="zip city form-control short" style="width: 95%;">
+                                                <option value="台北市">台北市</option>
+                                                <option value="基隆市">基隆市</option>
+                                                <option value="新北市">新北市</option>
+                                                <option value="宜蘭縣">宜蘭縣</option>
+                                                <option value="新竹市">新竹市</option>
+                                                <option value="新竹縣">新竹縣</option>
+                                                <option value="桃園縣">桃園縣</option>
+                                                <option value="苗栗縣">苗栗縣</option>
+                                                <option value="台中市">台中市</option>
+                                                <option value="彰化縣">彰化縣</option>
+                                                <option value="南投縣">南投縣</option>
+                                                <option value="嘉義市">嘉義市</option>
+                                                <option value="嘉義縣">嘉義縣</option>
+                                                <option value="雲林縣">雲林縣</option>
+                                                <option value="台南市">台南市</option>
+                                                <option value="高雄市">高雄市</option>
+                                                <option value="屏東縣">屏東縣</option>
+                                                <option value="台東縣">台東縣</option>
+                                                <option value="花蓮縣">花蓮縣</option>
+                                                <option value="澎湖縣">澎湖縣</option>
+                                                <option value="金門縣">金門縣</option>
+                                                <option value="連江縣">連江縣</option>
+                                                <option value="南海島">南海島</option>
+                                                <option value="釣魚台">釣魚台</option>
+                                            </select>
+                                            <i style="right: 29px;"></i>
+                                        </label>
+                                    </section>
+                                    <section class="columns small-6 medium-4 pa">
+                                        <label class="select">
+                                            <select name="ctl00$CPC$canton" id="CPC_canton" class="zip county form-control short">
+                                                <option value="中正區">中正區</option>
+                                                <option value="大同區">大同區</option>
+                                                <option value="中山區">中山區</option>
+                                                <option value="松山區">松山區</option>
+                                                <option value="大安區">大安區</option>
+                                                <option value="萬華區">萬華區</option>
+                                                <option value="信義區">信義區</option>
+                                                <option value="士林區">士林區</option>
+                                                <option value="北投區">北投區</option>
+                                                <option value="內湖區">內湖區</option>
+                                                <option value="南港區">南港區</option>
+                                                <option value="文山區">文山區</option>
+                                            </select>
+                                            <i></i>
+                                        </label>
+                                    </section>
+                                    <input type="hidden" name="ctl00$CPC$hidcity" id="CPC_hidcity" value="台北市">
+                                    <input type="hidden" name="ctl00$CPC$hidcounty" id="CPC_hidcounty" value="中正區">
+                                </div>
+                                <section>
+                                    <label class="input">
+                                        <input style="color:#ccc;" name="ctl00$CPC$address" type="text" id="CPC_address" class="required" placeholder="※ 聯絡地址">
+                                    </label>
+                                </section>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <section>
+                                    <label class="input">
+                                        <input name=" " type="text" id=" " class="required" placeholder="※ 電子信箱">
+                                    </label>
+                                </section>
+                                <section>
+                                    <label class="input">
+                                        <input name=" " type="text" id=" " class="required" placeholder="※ 電子信箱再次確認">
+                                    </label>
+                                </section>
+                                <div class="columns" style="border-bottom: 1px dotted #ccc;margin-bottom: 15px;"></div>
+                                <div class="row address">
+                                    <section class="col col-6">
+                                        <label class="select" style="width: 95%;">
+                                            <select name=" " id="" class="col col-4">
+                                                <option value="年齡層">年齡層</option>
+                                                <option value="0~10歲">0~10歲</option>
+                                                <option value="0~10歲">11~20歲</option>
+                                                <option value="0~10歲">21~30歲</option>
+                                                <option value="0~10歲">31~40歲</option>
+                                                <option value="0~10歲">41~50歲</option>
+                                                <option value="0~10歲">51~60歲</option>
+                                                <option value="0~10歲">61~70歲</option>
+                                                <option value="0~10歲">71~80歲以上</option>
+                                            </select>
+                                            <i style="right: 13px;"></i>
+                                        </label>
+                                    </section>
+                                    <section class="col col-6">
+                                        <label class="select" style="width: 100%;    float: right;">
+                                            <select name=" " id="" class="col col-4">
+                                                <option value="職業">職業</option>
+                                                <option value="學生">學生</option>
+                                                <option value="主婦">主婦</option>
+                                                <option value="上班族">上班族</option>
+                                                <option value="公務員">公務員</option>
+                                                <option value="經銷商">經銷商</option>
+                                                <option value="零售商">零售商</option>
+                                                <option value="物流業">物流業</option>
+                                                <option value="學校">學校</option>
+                                                <option value="醫院">醫院</option>
+                                                <option value="其他">其他</option>
+                                            </select>
+                                            <i style="right: 13px;"></i>
+                                        </label>
+                                    </section>
+                                </div>
+                                <div class="row"><span style="font-size:.9rem;padding-right:5px;">※ 鴻福的回覆：</span>
+                                    <input id="checkbox1" type="checkbox"><label for="checkbox1">必要</label>
+                                    <input id="checkbox2" type="checkbox"><label for="checkbox2">不要</label>
+                                </div>
+                                <section>
+                                    <label class="input input-captcha" style="margin-top: 20px;">
+                                        <img src="ValidateNumber.ashx" width="100" height="32" alt="Captcha image" name="imgCode" onclick="form1.imgCode.src = 'ValidateNumber.ashx?' + Math.random();">
+                                        <input name="ctl00$CPC$txt_input" type="text" id="CPC_txt_input" class="validate required" placeholder="請輸入右方圖片的文字">
+                                    </label>
+                                </section>
+                            </fieldset>
+                            <footer>
+                                <input type="submit" name="ctl00$CPC$btnSave" value="送出信件" id="CPC_btnSave" class="bnt">
+                                <input name="ctl00$CPC$act" type="text" value="front_add" id="CPC_act" style="display:none">
+                                <div class="progress"></div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="JS/birthday.js"></script>
+    <script>
+        $(function () {
+	$.ms_DatePicker({
+            YearSelector: ".sel_year",
+            MonthSelector: ".sel_month",
+            DaySelector: ".sel_day"
+    });
+	$.ms_DatePicker();
+}); 
+</script>
+    </script>
+    <!-- content end -->
+    <div class="columns" style="border:3px solid #b20d16;">
+    </div>
+    <div class="row">
+        <div class="columns small-12  medium-3 sam logo2">
+            <a href=""><img src="images/logo2.svg"></a>
+        </div>
+        <div class="columns small-6 medium-3 footer-add">
+            <div>板橋廠</div>
+            <ul>
+                <li>新北市板橋區金門街369巷65號</li>
+                <li>TEL：02-2684-2099</li>
+                <li>FAX：02-2684-1755</li>
+            </ul>
+        </div>
+        <div class="columns small-6 medium-3 footer-add">
+            <div>楊梅廠</div>
+            <ul>
+                <li>桃園市楊梅區電研路190巷268號</li>
+                <li>TEL：03-496-5799</li>
+                <li>FAX：03-496-5123</li>
+            </ul>
+        </div>
+        <div class="columns footer-copy">
+            copyright Hurng Fur Factory Co.,LTD ALL Rights Reserved.
+        </div>
+    </div>
+    <!-- content end-->
+    </div>
+    <nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+        <button class="c-menu__close">Menu &rarr;</button>
+        <ul class="c-menu__items">
+            <li class="c-menu__item">
+                <div style="border: 0px solid #fff;margin:12px 40px 12px 22px;background-color: rgb(255, 255, 255);">
+                    <div style="display: inline-block;">
+                        <input style="margin-bottom: 0px;width:202px;height: 28px;border: 0;background: #fff;box-shadow: inset 0 1px 2px hsla(0,0%,4%,.0);font-size: 14px;" type="text" placeholder="Search">
+                    </div>
+                    <div style="display: inline-block;position: relative;right: 5px;top: -1px;">
+                        <img src="images/zoom.svg" onclick="" style="width: 12px;vertical-align: inherit;position: relative;top: 2px;">
+                    </div>
+                </div>
+            </li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">產品介紹</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">安全安心</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">樂食情報</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">購物網站</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">關於鴻福</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link">聯絡我們</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fa fa-user-plus" style="padding-right: 5px;"></i>會員註冊</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fa fa-lock" style="padding-right: 5px;"></i>登入會員</a></li>
+            <li class="c-menu__item"><a href="#" class="c-menu__link"><i class="fa fa-shopping-cart" style="padding-right: 5px;"></i>購物車(0)</a></li>
+        </ul>
+    </nav>
+    <div id="c-mask" class="c-mask"></div>
+    <script src="js/dist/menu.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+    $(document).foundation();
+
+    $(document).ready(function() {
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            auto: true,
+            pause: 666000
+        });
+    });
+
+    /* Slide right */
+    var slideRight = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-right',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+    slideRightBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideRight.open();
+    });
+    </script>
+</body>
+</html?

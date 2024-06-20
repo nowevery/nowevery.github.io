@@ -1,0 +1,119 @@
+<script src="header.js"></script>
+<main class="inner">
+	<h1 class="font35">Request A Quote</h1>
+	<div class="text">To request your quote, please fill in the form below and press the SUBMIT button.</div>
+	<div class="text"><span class="tip-icon">*</span> Note: These fields are required.</div>
+	<form class="form-box" id="commentForm">
+		<div class="title">Form</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Company Name</div><input type="text" name="name" required  value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Contact Name</div><input type="text" name="contactname" required  value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Phone</div><input required  name="tel" value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Email</div><input type="email" name="email" placeholder="" required>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>How do you know GIGATEK?</div>
+			<label><input type="checkbox" name="know" value="Internet">Internet search</label>
+			<label><input type="checkbox" name="know" value="Recommend">Recommend </label>		
+			<label><input type="checkbox" name="know" value="others">others</label>
+			<textarea ></textarea>
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Please describe the application for this product.</div><textarea name="" required></textarea>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>Expectation business method with Gigatek :</div>
+			<label><input type="checkbox" name="know" value="Internet">OEM</label>
+			<label><input type="checkbox" name="know" value="Recommend">ODM</label>
+		</div>
+		<div class="row check-box">
+			<div class="line-flex"><span class="tip-icon">*</span>Is this project a new developing product in your firm ?</div>
+			<label><input type="radio" name="project" value="yes">Yes</label>
+			<label><input type="radio" name="project" value="no">No</label>
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Comments</div><textarea name="comments" required></textarea>
+		</div>
+		<div class="row">
+			<div class="sub-title"><span class="tip-icon">*</span>Select files for upload:</div>
+		</div>
+		<div class="row file-box">
+			<div class="name">Gerber</div>
+			<div>
+				<label><input type="file" id="upload-1" onchange="handleFile()" class="hide"><span class="upload-1">Choose File</span></label>
+				<span id="file_name">No file chosen</span>				
+			</div>
+
+			<div class="name">Drawing</div>
+			<div>
+				<label><input type="file" id="upload-2" onchange="handleFile()" class="hide"><span class="upload-2">Choose File</span></label>
+				<span id="file_name2">No file chosen</span>				
+			</div>
+
+			<div class="name">BOM</div>
+			<div>
+				<label><input type="file" id="upload-3" onchange="handleFile()" class="hide"><span class="upload-3">Choose File</span></label>
+				<span id="file_name3">No file chosen</span>				
+			</div>
+
+
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Verification code</div>
+			<div class="code">
+				<input name="code" required onkeyup="this.value=this.value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+				<span>
+					<img src="public/SRC/images/verification_demo.jpg"><i class="fas fa-redo"></i>
+				</span>
+			</div>
+		</div>
+		<div class="btn-box">
+			<button type="reset" class="btn">Rewrite</button>
+			<button type="submit" class="btn">submit</button>
+		</div>
+	</form>
+</main>
+<nav class="bread">
+	<div class="inner">
+		<a href="index.php">Home</a><span class="bread-space">/</span>Request A Quote
+	</div>
+
+</nav>
+<script src="footer.js"></script>
+
+<script>   
+  var inputFile = document.getElementById('upload-1');
+
+  	
+  	inputFile.addEventListener('change', function(e) {
+    var fileData = e.target.files[0]; // 檔案資訊
+    var fileName = fileData.name; // 檔案名稱
+    document.getElementById('file_name').innerText = fileName;
+    $(".upload-1").html('Re-upload').addClass('re');
+    $("#file_name").addClass('re');
+  }, false);
+  var inputFile = document.getElementById('upload-2');
+  	inputFile.addEventListener('change', function(e) {
+    var fileData = e.target.files[0]; // 檔案資訊
+    var fileName = fileData.name; // 檔案名稱
+    document.getElementById('file_name2').innerText = fileName;
+    $(".upload-2").html('Re-upload').addClass('re');
+    $("#file_name2").addClass('re');
+  }, false);
+  var inputFile = document.getElementById('upload-3');
+  	inputFile.addEventListener('change', function(e) {
+    var fileData = e.target.files[0]; // 檔案資訊
+    var fileName = fileData.name; // 檔案名稱
+    document.getElementById('file_name3').innerText = fileName;
+    $(".upload-3").html('Re-upload').addClass('re');
+    $("#file_name3").addClass('re');
+  }, false);
+
+
+</script>

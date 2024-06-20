@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>罡辰自動車股有限公司</title>
+    <link rel="stylesheet" href="css/meanmenu.css" media="all" />
+    <link href="css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link href="css/fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <style>
+        .sky-from{
+            margin: 50px auto;
+        }
+
+        [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'],textarea{
+            font-size: 15px;box-shadow: inset 0 0px 0px rgba(10, 10, 10, 0.1);border: 1px solid #8a8a8a;
+        }
+        .sky-from select{
+            font-size: 15px;border: 1px solid #8a8a8a;
+        }
+
+        .contact-bt{
+            border: 1px solid #000;
+            background: #000;
+            color: #fff;
+            padding: 9px 25px;
+            font-size: 15px;
+        }
+        .sky-from iframe{
+            border: 1px solid #a0a0a0;
+            padding: 5px;
+        }
+        .add{
+            font-size: 13px;
+            line-height: 25px;
+        }
+
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/jquery.meanmenu.js"></script>
+    <script src="js/wow.js"></script>
+    <script type='text/javascript' src='js/navbar.js'></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+</head>
+<body>
+    <div class="columns menu-fixed" >
+        <div class="row">
+          <div class="columns head-top">
+            <a href="index.html"><img src="image/logo.png"></a>
+            <ul class="menu-top">
+                <li><div class="line-left"></div><a href="about.html">公司簡介</a><div class="line-right"></div></li>
+                <li><a href="features.html">再製特色</a><div class="line-right"></li>
+                <li><a href="remanufacturing.html">再製工程</a><div class="line-right"></li>
+                <li><a href="product.html">產品介紹</a><div class="line-right"></li>
+                <li><a href="technology.html">技術資訊</a><div class="line-right"></li>
+                <li><a href="contact.html">聯絡我們</a><div class="line-right"></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<header>
+    <nav>
+        <ul>
+        </li>
+        <li><a href="about.html">公司簡介</a></li>
+        <li><a href="features.html">再製特色</a></li>
+        <li><a href="remanufacturing.html">再製工程</a>
+            <ul>
+                <li><a href="remanufacturing.html">選項1</a></li>
+                <li><a href="remanufacturing.html">選項2</a></li>
+            </ul>
+        </li>
+        <li><a href="product.html">產品介紹</a>
+            <ul>
+                <li><a href="product.html">選項1</a>
+                    <ul>
+                        <li><a href="product2.html">選項1</a></li>
+                        <li><a href="product2.html">選項2</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">選項2</a>
+                    <ul>
+                        <li><a href="product2.html">選項1</a></li>
+                        <li><a href="product2.html">選項2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="technology.html">技術資訊</a>
+            <ul>
+                <li><a href="technology.html">選項1</a></li>
+                <li><a href="technology.html">選項2</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">聯絡我們</a></li>
+    </ul>
+</nav>
+</header>
+<!-- 內容 -->
+<div class="columns head-top" style="margin-top:77px;"></div>
+<div class="columns pa page-under">
+    <div class="columns page-title wow pulse"><!-- <i class="fa fa-star" aria-hidden="true"></i> -->聯絡我們<div>contact</div></div>
+</div>
+<div class="row">
+<div class="columns medium-7 sky-from pa wow fadeInDown">
+        <div class="columns" style="    font-size: 15px;margin-bottom: 15px;"><i class="fa fa-pencil-square" aria-hidden="true" style="padding-right:5px;"></i>
+            請填寫下列資料，我們將在收到訊息後盡快與您聯繫，謝謝!</div>
+            <div class="columns small-12 medium-12 pa"> 
+                <div class="columns medium-6 pa-10">
+                    <input name="ctl00$CPC$name" type="text" id="CPC_name" class="required" placeholder="您的稱呼">
+                </div>
+                <div class="columns medium-6 pa-10">
+                    <input name="ctl00$CPC$txtcontact" type="text" id="CPC_txtcontact" class="required" placeholder="公司名稱">
+                </div>
+                <div class="columns medium-6 pa-10">
+                    <input name="ctl00$CPC$email" type="text" id="CPC_email" placeholder="E-mail">
+                </div>
+                <div class="columns medium-6 pa-10">
+                    <input name="ctl00$CPC$tel" type="text" id="CPC_tel" class="required" placeholder="聯絡電話">
+                </div>
+                <div class="columns pa address">
+                    <div class="columns  medium-4 pa-10">
+                        <section class="col col-4">
+                            <label class="input">
+                                <input name="ctl00$CPC$zip" type="text" id="CPC_zip" class="zipcode form-control addnumber w95" placeholder="郵遞區號"></input>
+                            </label>
+                        </section>
+                    </div>
+                    <div class="columns  medium-4 pa-10">
+                        <section class="col col-4">
+                            <label class="select">
+                                <select name="ctl00$CPC$city" id="CPC_city" class="zip city form-control short w95" style="height: 38px;"><option value="台北市">台北市</option></select>
+                                <i style="right: 24px;"></i>
+                            </label>
+                        </section>
+                    </div>
+                    <div class="columns   medium-4 pa-10">
+                        <section class="col col-4">
+                            <label class="select">
+                              <select class="zip county form-control short" style=" height: 38px;">
+                                <option value="中正區">中正區</option></select>
+                                <i style="right: 24px;"></i>
+                            </label>
+                        </section>
+                        <input type="hidden" name="ctl00$CPC$hidcity" id="CPC_hidcity" value="台北市">
+                        <input type="hidden" name="ctl00$CPC$hidcounty" id="CPC_hidcounty" value="中正區">
+                    </div>
+                    
+                    <div class="columns pa-10">
+                        <input name="ctl00$CPC$address" type="text" id="CPC_address" class="required" placeholder="聯絡地址">
+                    </div>
+                    <div class="columns pa-10">
+                        <label class="textarea">
+                            <textarea name="ctl00$CPC$msg" rows="5" cols="20" id="CPC_msg" class="form-control required" placeholder="請留下您寶貴的意見。"></textarea>
+                        </label>
+                    </div>
+                    <div class="columns pa-10">
+                        <label class="Captcha" style="position: relative;">
+                            <img style="height: 39px;position: absolute;top: 0px;right: 0px;" src="ValidateNumber.jpg" width="100" >
+                            <input name="ctl00$CPC$txt_input" type="text" id="CPC_txt_input" class="validate required" placeholder="請輸入右方圖片的文字">
+                        </label>
+                    </div>
+                    <div class="columns pa-10">
+                        <input type="submit" name="ctl00$CPC$btnSave" value="送出信件" id="CPC_btnSave" class="contact-bt Save">
+                        <input name="ctl00$CPC$act" type="text" value="front_add" id="CPC_act" style="display:none">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="columns medium-5 sky-from wow fadeInDown">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.493903063641!2d121.2695189795044!3d25.05124374747598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681ffdc12e007d%3A0x45bd18738c7319a1!2zMzM45qGD5ZyS5biC6JiG56u55Y2A6JiG56u56KGXMTE36Jmf!5e0!3m2!1szh-TW!2stw!4v1488351755355" width="100%" height="300" frameborder="0"  allowfullscreen></iframe>
+            <div class="add">
+                <div style="font-size: 20px;margin: 12px auto 5px;">罡辰自動車股份有限公司</div>
+                <div>住址 : 33849桃園市蘆竹區蘆竹街117號</div>
+                <div>電話 : 03-311-3546</div>
+                <div>傳真 ： 03-311-2055</div>
+                <div>Email : gang.chrn@msa.hinet.net</div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="js/address.js"></script>
+    <script>
+        $(document).ready(function () {
+            //表單地址
+            $('.address').ajaddress({ city: "台北市", county: "中正區" });
+            $(".zip").change(function () {
+                $("#CPC_hidcity").val($("#CPC_city").find(":selected").val());
+                $("#CPC_hidcounty").val($("#CPC_canton").find(":selected").val());
+            });
+            //表單驗證
+            $(".Save").click(function () {
+                var check = true;
+                $(".required").each(function () {
+                    if ($(this).val() == "") {
+                        //alert($(this).parent().find("label").text() + "不可空白");
+                        alert($(this).attr("placeholder") + "不可空白");
+                        $(this).focus();
+                        check = false;
+                        return false;
+                    }
+                });
+                if (check) {
+                    var reg = /^\w+((-\w+)|(\.\w+))*\@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,5}){1,3})$/; //E-mail驗證
+                    var reg1 = /^(09)\d{8}$/;//手機驗證
+                    var reg2 = /^[0-9]+$/;//驗證包含數字的字串
+                    var reg3 = /^(?=^.{6,12}$)((?=.*[0-9])(?=.*[a-z|A-Z]))^.*$/;//密碼驗證(6~12字元,包含數字或英文大小寫)
+                    var txtuser_email = $("#CPC_email").val();
+                    if (!reg.test(txtuser_email)) {
+                        alert('Email格式錯誤，請重新輸入');
+                        check = false;
+                        return false;
+                    }
+                    else {
+                    }
+                }
+                return check;
+            });
+
+        });
+    </script>
+    <!-- 內容 ＥＮＤ-->
+    <footer class="columns">
+        <div class="row">
+            <div class="columns wow fadeInUp"  style="max-width: 1200px;margin: 0 auto;">
+                <div class="logo2"><img src="image/logo2.png"></div>
+                <div class="footerinfo">
+                    <div>公司住址：33849桃園市蘆竹區蘆竹街117號</div>
+                    <div>Email：gang.chrn@msa.hinet.net</div>
+                </div>
+                <div class="footerinfo">
+                    <div>電話：03-311-3546</div>
+                    <div>傳真：03-311-2055</div>
+                </div>
+                <div class="copyright">© GANG CHRN AUTOMOTIVE CO., LTD..</div>
+            </div>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.mousewheel.js"></script>-->
+    <script>
+
+
+      $(document).ready(function () {
+        $('header nav').meanmenu();
+        $('.fancybox').fancybox();
+    });
+      new WOW().init();
+
+  </script>
+
+</body>
+</html>

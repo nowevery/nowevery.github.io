@@ -1,0 +1,89 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_logo.js"></script>
+<main class="member inner">
+    <div class="pro-top">
+        <div class="bread"><a href="index.html">Home</a><span class="bread-space">/</span><a href="member_area.html">會員專區</a><span class="bread-space">/</span>個人資料</div>  
+    </div>
+    <div class="container row">
+        <div class="mobile-menu"><span>個人資料管理</span><i class="fas fa-chevron-down"></i></div>
+        <div class="left-menu member-menu">
+            <div class="menu-item">
+                <div class="menu-sub">
+                    <!-- 當前分類 加.active -->
+                    <a href="member_area.html" class="menu-sub-a">會員專區</a>
+                    <a href="member_account.html" class="menu-sub-a active">個人資料</a>
+                    <a href="member_favorite.html" class="menu-sub-a">收藏清單</a>
+                    <a href="member_order.html" class="menu-sub-a">訂單管理</a>
+                    <a href="index.html"  class="menu-sub-a">登出</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="member-name">個人資料管理</div>
+            <div class="member-q-l">
+                <form  action="">
+                    <div class="form-top-text"><b class="tip-o">＊</b>為必填</div>
+                    <div class="form_flex">
+                        <span>Email帳號</span>
+                        <span>jddt@jddt.com</span>          
+                    </div>
+                    <div class="form_flex">
+                        <span><b class="tip-o">＊</b>密碼</span>
+                        <input type="password" placeholder="密碼">
+                    </div>
+                    <div class="form_flex">
+                        <span><b class="tip-o">＊</b>確認密碼</span>
+                        <input type="password" placeholder="請再次輸入密碼">
+                    </div>
+                    <div class="form_flex">
+                        <span>姓名</span>
+                        <span>jddt</span>
+                    </div>
+                    <div class="form_flex ">
+                        <span>性別</span>
+                        <span>男</span>               
+                    </div>
+                    <div class="form_flex">
+                        <span><b class="tip-o">＊</b>手機</span>
+                        <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="＊手機" value="0987654321">
+                    </div>
+                    <div class="form_flex">
+                        <span>聯絡電話</span>
+                        <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="＊手機" value="0498765432">
+                    </div>
+                    <div class="form_flex ">
+                        <span>生日</span>
+                        <span>1999/02/02</span>
+                    </div>
+
+                    <div class="form_flex a-t">
+                        <span><b class="tip-o">＊</b>住址</span>
+                        <div class="address-input w-100">
+                            <div class="address-input">
+                                <div id="twzipcode">
+                                </div>
+                                <input type="text" placeholder="請輸入地址"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_flex code_inline">
+                        <span ><b class="tip-o">＊</b>驗證碼</span>
+                        <input type="text" placeholder="請輸入驗證碼">        
+                        <img src="SRC/images/demo/verification_demo.jpg" alt="">
+                        <button type="button">
+                            <i class="fas fa-redo"></i>
+                        </button>                       
+                    </div>
+                    <div class="btn-box">
+                    
+                        <button type="reset" class="btn2">重新填寫</button>
+                        <button type="submit" class="btn1">確定修改</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="SRC/js/_footer.js"></script>

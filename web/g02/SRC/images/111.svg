@@ -1,0 +1,10 @@
+<svg width="345" height="60">
+  <linearGradient id="en-title" x1="100%" y1="100%" x2="0" y2="0"> <stop stop-color="#056cc7" offset="30%"/> <stop stop-color="#0e2183" offset="70%"/> </linearGradient>
+  <text text-anchor="middle"
+          x="50%"
+          y="50%"
+          class="h2-en" style="fill: url(#en-title);"
+          >
+      SVG
+    </text>
+</svg>

@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+<script src="SRC/js/header.js"></script>
+<main class="member_registe form-style">
+    <div class="member-title w500"><span>註冊樂趣捐會員</span></div>
+    <div class="inner w500">
+        <ul class="login-boon">
+            <div class="title">註冊會員，享受樂趣福利</div>
+            <li><i class="fas fa-satellite-dish"></i>追蹤您進入的體驗</li>
+            <li><i class="fas fa-clipboard-check"></i>查看你累績的積分</li>
+            <li><i class="fas fa-piggy-bank"></i>查看你擁有的優惠卷</li>
+            <li><i class="far fa-clock"></i>第一時間獲得新體驗資訊</li>
+            <li><i class="fas fa-edit"></i>聯繫方式可以更新</li>
+        </ul>
+        <button><img src="SRC/images/fb-w.svg">Facebook 註冊</button>
+        <button><img src="SRC/images/google.svg">Google 註冊</button>
+        <div class="or-line"></div>
+        <div>
+            <div class="input-row">
+                <input >
+                <label>Email帳號</label>            
+            </div>
+
+       
+            <div class="input-row">
+                <input >
+                <label>請設定密碼</label>
+                <i class="far fa-eye-slash show_pass"></i>  
+            </div>
+
+            <div class="input-row">
+                <input >
+                <label>確認密碼</label>
+                <i class="far fa-eye-slash show_pass"></i>  
+            </div>
+            <div class="input-row code-row">
+                <input type="text">
+                <label>驗證碼</label>
+                <div class="code-img"><img src="SRC/images/verification_demo.jpg" alt=""><i class="fas fa-redo-alt"></i></div>  
+            </div>
+            <div class="checkbox-row">
+               <input type="checkbox" name="" id="Email" class="hide"><label for="Email">訂閱電子報</label> 
+            </div>
+            <div class="checkbox-row">
+               <input type="checkbox" name="" id="terms" class="hide"><label for="terms">我已詳細閱讀<span id="terms-open">使用條款</span></label> 
+            </div>
+            
+            <a href="" class="login-btn">註冊會員  </a>    
+        </div>
+        <div class="w500">
+            <div class="member-add-title">已經是會員了?</div>
+            <a href="member_login.html" class="add-btn">登入會員</a>        
+        </div>
+    </div>
+    <div class="terms-open lightbox">
+        
+        <div  class="lightbox-content">
+            <img class="lightbox-close" src="SRC/images/close.svg">
+            <div class="lightbox-scroll">
+                <div class="title">使用條款</div>
+                <div class="user_editor editor-content page-editor">
+                    <?php include('_terms_text.html') ?>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="SRC/js/footer.js"></script>
+

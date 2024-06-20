@@ -1,0 +1,265 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_logo.js"></script>
+<main class="member inner">
+    <div class="bread"><a href="index"><i class="fas fa-home"></i></a><span class="bread-space">/</span>會員專區</div>
+    <div class="container row">
+        <div class="mobile-menu"><span>訂單管理</span><i class="fas fa-chevron-down"></i></div>
+        <div class="left-menu member-menu">
+            <h1>會員專區</h1>
+            <div class="menu-item">
+                <div class="menu-sub">
+                    <!-- 當前分類 加.active -->
+                    <a href="member_area.html" class="menu-sub-a">會員首頁</a>
+                    <a href="member_account.html" class="menu-sub-a">個人資料</a>
+                    <a href="member_favorite.html" class="menu-sub-a">願望清單</a>
+                    <a href="member_order.html" class="menu-sub-a active">訂單管理</a>
+                    <a href="index.html"  class="menu-sub-a">登出</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="member-name show-1024">訂單查詢</div>
+            <form action="member_order.html" class="order-search">
+                <select>
+                    <option value="" selected="">付款方式</option>
+                    <option value="">ATM轉帳(單家銀行帳號)</option>
+                    <option value="">ATM轉帳(單組郵局帳號)</option>
+                </select>
+                <div class="order-search-input">
+                    <input type="text" placeholder="請輸入產品名稱" name="search">
+                    <button type="submit" class="btn s2">搜尋</button>                        
+                </div>
+            </form>
+            <div class="member-name">所有訂單</div>
+
+            <!-- 已出貨 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨<span>(物流單號：1002-6790-5761)</span></span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：7-11超商取貨不付款</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <!-- 退換貨 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：宅配</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <!-- 未處理 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：萊爾富到店取貨不付款</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div> 
+            </div>
+
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨<span>(物流單號：1002-6790-5761)</span></span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：7-11超商取貨不付款</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：宅配</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：萊爾富到店取貨不付款</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div> 
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨<span>(物流單號：1002-6790-5761)</span></span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：7-11超商取貨不付款</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：宅配</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：萊爾富到店取貨不付款</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div> 
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/pro1.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：宅配</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>             
+            
+            <!-- 一頁10筆 -->               
+            <div class="page-number">
+                <a href="" class="active">1</a><a href="">2</a><a href="">3</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- 訂單詢問 -->
+<script src="SRC/js/_order_ask.js"></script>
+
+<!-- 匯款回覆 -->
+<script src="SRC/js/_order_reply.js"></script>
+
+
+<script src="SRC/js/_footer.js"></script>

@@ -1,0 +1,71 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+  <div class="main_top"></div> 
+
+  <div class="page-banner wow fadeIn">
+    <picture>
+      <source media="(min-width: 800px)" srcset="images/demo/SSEC-web-banner.png">
+      <img src="images/demo/pcweb-banner.png" alt="">
+    </picture>
+    <div class="banner_ttbox">
+      <h2>產品系列</h2>
+    </div>
+  </div>
+  <main>
+  
+    <section class="wow fadeIn">
+      <!-- 顯示當前所在分類 -->
+      <div class="m-PageTitle box-1">產品洽詢</div>
+      <div class="place">
+        <div class="box-1">
+          <li><a href="products.html">JS系列</a></li>
+          <li><a href="products.html">JL系列</a></li>
+          <li class="current"><a href="p_contatc.html">產品洽詢</a></li>
+        </div>  
+      </div>  
+      
+    </section>  
+    <section class="box-1 wow fadeIn">
+      <div class="content">
+        <div class="space">
+          <div class="articleTitle"><span>產品洽詢</span></div>
+          <form action="javascript:void(0)">
+            <ul class="styled-input">
+              <li class="half">
+                <label>品名</label>
+                <input type="text" required>
+              </li>
+              <li class="half">
+                <label>型號</label>
+                <input type="text" required>
+              </li>
+              <li class="half">
+                <label>規格</label>
+                <input type="text" required>
+              </li>
+              <li class="half">
+                <label>公司名稱</label>
+                <input type="text" required>
+              </li>
+              <li>
+                <div class="label" for="content">洽詢內容</div>
+                <textarea id="content"></textarea>
+              </li>
+              <li class="half">
+                <label>驗證碼</label>
+                <input type="text" required>
+              </li>
+              <li class="half text_center code">
+                <img src="images/demo/verification_bemo.jpg" />
+                <span class="refresh"><a href="javascript:void(0);"><img src="images/testing.svg" alt="刷新驗證碼"></a></span>
+              </li>
+              <li class="text_center big-btn">
+                <input class="button slide02" href="products_view.html" type="submit" class="btn-style01" value="確認送出" onclick="if(confirm('確定送出嗎?')) return true;else return false">
+              </li>
+            </ul>
+          </form>
+        </div>   
+      </div>  
+    </section>  
+  </main>
+  <script src="_foot.js"></script>

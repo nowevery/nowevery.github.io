@@ -1,0 +1,124 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+  <div class="page-banner" style="background-image: url('images/demo/banner01.jpg')"></div>
+  <!--classLink-->
+  <div class="classBox wow fadeIn">
+      <ul class="classLink clearfix">
+        <li><a href="#section-1" id="se01" class="current">聯絡我們</a></li>
+        <li><a href="#section-2" id="se02">洽詢表單</a></li>
+      </ul>
+  </div>  
+  <main class="contact">
+    <!--classLink end-->
+    <div id="section-1" class="point"></div>
+    <section class="box-2 wow fadeIn">
+      <div class="contact">
+        <div class="contact_list">
+                <div class="w15">
+                  <p>您可以利用電話與我們連絡，或利用客戶意見表來傳遞您的訊息， 我們收到後將會迅速為您處理，謝謝您!!</p>
+                </div>
+                <ul style="margin-top:30px;">           
+                  <li>
+                    <div class="contact_list02">
+                      <dd><i class="far fa-building"></i></dd>
+                      <dt>地址：404台中市北區進化北路</dt>
+                    </div>
+                  </li>
+                </ul> 
+                <ul> 
+                 <li>
+                    <div class="contact_list02">
+                      <dd><i class="fa fa-phone"></i></dd>
+                      <dt>電話：04-22378096</dt>
+                    </div>
+                  </li>
+                </ul> 
+               <ul>
+                 <li>    
+                    <div class="contact_list02">
+                      <dd><i class="fa fa-fax"></i></dd>
+                     <dt>傳真：04-22378575</dt>
+                    </div>
+                 </li>
+               </ul> 
+               <ul>  
+                 <li>
+                <div class="contact_list02">
+                  <dd><i class="far fa-envelope-open"></i></dd>
+                  <dt>E-mail：<a href="mailto:info@jlweb.net">info@jlweb.net</a></dt>
+                </div>
+                 </li>
+               </ul>  
+        </div>
+        <div class="contact_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14560.952911790424!2d120.67731990000001!3d24.1633766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1627cee8e8f254f!2z5p2w6byO5pW45L2N56eR5oqA6IKh5Lu95pyJ6ZmQ5YWs5Y-4KOe2sumggeioreioiOe4vemDqCk!5e0!3m2!1szh-TW!2stw!4v1627536226373!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <div id="section-2" class="point"></div>
+    <section class="contact_bg wow fadeIn">
+      <div class="box-2">
+        <form action="javascript:void(0)">
+						<div class="contact-form">
+							<ul class="styled-input">
+                                <li>
+									<label class="label" for="name">姓名*</label>
+									<input type="text" id="name" placeholder="姓名*" />
+								</li>
+                                <li class="half">
+									<label class="label" for="email">E-mail*</label>
+									<input type="text" id="email" placeholder="E-mail*" />
+								</li>
+                                <li class="half">
+									<label class="label" for="phone">手機號碼*</label>
+									<input type="text" id="phone" placeholder="手機號碼*" />
+								</li>
+                                <li>
+									<label class="label" for="company">公司名稱</label>
+									<input type="text" id="company" placeholder="公司名稱" />
+								</li>								
+								<li class="half">
+									<label class="label" for="tel">聯絡電話</label>
+									<input type="text" id="tel" placeholder="聯絡電話" />
+								</li>
+								<li class="half">
+									<label class="label" for="fax">地址</label>
+									<input type="text" id="" placeholder="地址" />
+								</li>
+								<li>
+									<label class="label" for="content">內容*</label>
+									<textarea id="content" placeholder="內容*"></textarea>
+								</li>
+                <li>
+									<label class="label" for="code">驗證碼</label>
+									<input type="text" id="code" placeholder="驗證碼" />
+								</li>
+                                <li class="contact-captcha">
+							      <img src="images/demo/code.png" />
+                                </li>
+								<li style="text-align:center;">
+                  <input type="reset" class="btn-style01" value="重新填寫"/ onclick="if(confirm('確定重新填寫嗎?')) return true;else return false">
+									<input type="submit" class="btn-style01" value="確認送出"/ onclick="if(confirm('確定送出嗎?')) return true;else return false"> 
+								</li>
+							</ul>
+						</div><!-- //contact-form -->
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="_foot.js"></script>
+  
+<script type="text/javascript">
+$(function(){	
+	$('#se01').click(function(){
+		$('html,body').animate({scrollTop:$('#section-1').offset().top}, 800);
+    $(this).addClass();
+    $('#se02').removeClass('current');
+	});	
+	$('#se02').click(function(){
+		$('html,body').animate({scrollTop:$('#section-2').offset().top}, 800);
+    $(this).addClass('current');
+    $('#se01').removeClass('current');
+	});	
+});
+</script>

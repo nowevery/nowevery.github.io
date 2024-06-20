@@ -1,0 +1,141 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+  <div class="main_top"></div> 
+  <div class="page-banner wow fadeIn">
+    <picture>
+      <source media="(min-width: 800px)" srcset="images/demo/SSEC-web-banner.png">
+      <img src="images/demo/pcweb-banner.png" alt="">
+    </picture>
+    <div class="banner_ttbox">
+      <h2>產品系列</h2>
+    </div>
+  </div>
+  <main>
+    <section class="wow fadeIn">
+      <!-- 顯示當前所在分類 -->
+      <div class="m-PageTitle box-1">JS系列</div>
+      <div class="place  m-m-0">
+        <div class="box-1">
+          <li class="current"><a href="products.html">JS系列</a></li>
+          <li><a href="products.html">JL系列</a></li>
+          <li><a href="p_contatc.html">產品洽詢</a></li>
+        </div>  
+      </div>  
+      
+    </section>     
+    <section class="box-1 wow fadeIn">
+      <div class="content m-m-0">
+        <div class="pro-row">
+          <div class="pro-left">
+              <div class="pro-slick">
+                  <div class="slick-item zoom">
+                      <div class="pro-img">
+                          <img class="pro-img-in" src="images/demo/news02.jpg">
+                      </div>
+                  </div>
+                  <div class="slick-item zoom">
+                      <div class="pro-img">
+                          <img class="pro-img-in" src="images/demo/news02.jpg">
+                      </div>
+                  </div>
+                  <div class="slick-item zoom">
+                      <div class="pro-img">
+                          <img class="pro-img-in" src="images/demo/news02.jpg">
+                      </div>
+                  </div>
+                  <div class="slick-item zoom">
+                      <div class="pro-img">
+                          <img class="pro-img-in" src="images/demo/news02.jpg">
+                      </div>
+                  </div>
+                  <div class="slick-item zoom">
+                      <div class="pro-img">
+                          <img class="pro-img-in" src="images/demo/news02.jpg">
+                      </div>
+                  </div>                  
+              </div>
+             <div class="pro-slick-nav">
+                  <div class="slick-item">
+                     <span class="pro-img"><img class="pro-img-in" src="images/demo/news02.jpg"></span>
+                  </div>
+                  <div class="slick-item">
+                     <span class="pro-img"><img class="pro-img-in" src="images/demo/news02.jpg"></span>
+                  </div>
+                  <div class="slick-item">
+                     <span class="pro-img"><img class="pro-img-in" src="images/demo/news02.jpg"></span>
+                  </div>
+                   <div class="slick-item">
+                     <span class="pro-img"><img class="pro-img-in" src="images/demo/news02.jpg"></span>
+                  </div>
+                  <div class="slick-item">
+                     <span class="pro-img"><img class="pro-img-in" src="images/demo/news02.jpg"></span>
+                  </div>                                
+             </div>
+          </div>
+          <div class="pro-right">
+            <h2>多功能數控蝸桿加工機</h2>
+            <ul>
+              <li><span>型號</span>S-00001</li>
+              <li><span>規格</span>N/A</li> 
+              <li><span>用途</span>冷凝泵/其他</li>
+            </ul>
+            <a href="p_contatc.html" class="con-btn">產品洽詢</a>
+            <a href="products.html" class="con-b-btn">產品一覽</a> 
+          </div>          
+        </div>
+      </div>
+    </section>
+    <section class="pro-tab">
+      <div class="wow fadeIn">
+        <ul class="tabs">
+          <li><a href="#tab1">產品簡介</a></li>
+          <li><a href="#tab2">規格說明</a></li>
+        </ul>
+        <div class="tab_container">
+            <div class="tab_box user_editor" id="tab1">
+            <img class="pro-img-in" src="images/demo/news02.jpg"><br><br>
+            機械是由機械結構（機構）組成，機械結構再由機械元件（構件）組成，是機械工程學的一個基本概念。機械就是能幫助人們節省工作難度或省力的工具裝置。有一些機械單純轉換力的大小或（及）方向，被稱為簡單機械。而複雜機械就是由二種或二種以上的簡單機械構成。</div>
+            <div class="tab_box user_editor" id="tab2"><img class="pro-img-in" src="images/demo/size.jpg"></div>            
+        </div>
+      </div>
+    </section>  
+  </main>
+  <script src="_foot.js"></script>
+  <script src="js/slick.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+  <script type="text/javascript">
+   if($(window).width() > 1200){
+        $('.zoom').zoom();
+    }
+    $('.pro-slick').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        dots: false,
+        arrows: false,
+        asNavFor: '.pro-slick-nav'
+    });
+    $('.pro-slick-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.pro-slick',
+        arrows: false,
+        // centerMode: true,
+        focusOnSelect: true,
+    });
+
+
+
+  $($('ul.tabs li').eq(0).addClass('active').find('a').attr('href')).siblings().hide();
+ 
+  $('ul.tabs li').click(function() {
+    $(this).addClass('active').siblings('.active').removeClass('active');
+    $($(this).find('a').attr('href')).stop(false, true).fadeIn().siblings().hide();
+ 
+    return false;
+  }).find('a').focus(function(){
+    this.blur();
+  });
+  </script>

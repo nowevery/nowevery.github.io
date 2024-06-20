@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: 'Gill Sans MT';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gill Sans MT Light'), local('Gill_Sans_MT_Light'), url(../fonts/Gill_Sans_MT/Gill_Sans_MT_Light.ttf) format('opentype'); 
+}
+
+.w32{
+	font-size: 42px;
+	color:#222;
+	text-decoration:none;
+	font-style: normal;font-weight: 600;	
+}
+.w20{
+	font-size: 16px;
+	color:#606060;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+}
+.w18{
+	font-size: 18px;
+	color:#333;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+	line-height:1.8;
+}
+.r16{
+	color:#da1518;	
+}
+@media only screen and (min-width: 0px) and (max-width: 800px){
+	.w32{
+		font-size: 30px;
+	}
+	.w20{
+		font-size: 16px;
+	}
+}

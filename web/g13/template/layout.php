@@ -1,0 +1,195 @@
+<?php
+// header("Cache-Control: no-cache");
+function setLastModified($last_modified = NULL)
+{
+    $page_modified = getlastmod();
+    if (empty($last_modified) || ($last_modified < $page_modified)) {
+        $last_modified = $page_modified;
+    }
+    $header_modified = filemtime(__FILE__);
+    if ($header_modified > $last_modified) {
+        $last_modified = $header_modified;
+    }
+    header('Last-Modified: ' . date("r", $last_modified));
+    return $last_modified;
+}
+function exitIfNotModifiedSince($last_modified)
+{
+    if (array_key_exists("HTTP_IF_MODIFIED_SINCE", $_SERVER)) {
+        $if_modified_since = strtotime(preg_replace('/;.*$/', '', $_SERVER["HTTP_IF_MODIFIED_SINCE"]));
+        if ($if_modified_since >= $last_modified) {
+            header("HTTP/1.0 304 Not Modified");
+            exit();
+        }
+    }
+}
+exitIfNotModifiedSince(setLastModified());
+$website = $this->db->get($this->front_lang . '_website')->row_array();
+$service = $this->db->where(array('cat' => 'service'))->order_by('sort asc,create_time desc')->get($this->front_lang.'_post')->result_array();
+$coursecategory = $this->db->where(array('cat' => 'course','status' => 'Y'))->order_by('sort asc,create_time desc')->get($this->front_lang.'_post_category')->result_array();
+$contact = $this->db->where(array('cat' => 'contact'))->order_by('sort asc,create_time desc')->get($this->front_lang.'_post')->result_array();
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/ms-icon-144x144.png') ?>">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="<?php echo $website['author']; ?>">
+    <meta name="description" content="<?php echo $website['description']; ?>">
+    <meta name="keywords" content="<?php echo $website['keywords']; ?>">
+    <meta name="url" content="<?php echo $website['url']; ?>">
+    <title><?php echo (isset($title_enable) && ($title_enable == 0)) ? $website['website_name'] : $title . ' | ' . $website['website_name'] ?></title>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/apple-touch-icon-144x144-precomposed.png') ?>" />
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/apple-icon-57x57.png') ?>" />
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/apple-icon-72x72.png') ?>" />
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/apple-icon-114x114.png') ?>" />
+    <link rel="icon" sizes="192x192" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/android-icon-192x192.png') ?>" type="image/png" />
+    <link rel="shortcut icon" href="<?php echo base_url('public/front/' . $this->front_lang . '/images/favicons/favicon.ico') ?>" type="image/x-icon" />
+    <!--== all css ==-->
+    <link href="<?php echo base_url('public/front/' . $this->front_lang . '/css/bootstrap.css') ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('public/front/' . $this->front_lang . '/css/master.css') ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('public/front/' . $this->front_lang . '/css/layout.css') ?>" rel="stylesheet" type="text/css">
+    <!--== all js ==-->
+    <script type="text/javascript" src="<?php echo base_url('public/front/' . $this->front_lang . '/js/jquery-3.1.1.js') ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('public/front/' . $this->front_lang . '/js/wow.js') ?>"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K978PTD');</script>
+<!-- End Google Tag Manager -->
+<!-- Global site tag (gtag.js) - Google Ads: 616704121 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-616704121"></script>
+<script>
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-616704121');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 689926841 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-689926841"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-689926841');
+</script>
+
+<!-- Event snippet for 聯絡我們 conversion page -->
+<script>
+    window.addEventListener("DOMContentLoaded", function(event) {
+        if (window.location.href.includes('/contact')){
+            gtag('event', 'conversion', {'send_to': 'AW-689926841/Jo3mCL_d09YBELnl_cgC'});
+        };
+    });
+</script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K978PTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- <header>
+        <section class="header">
+            <div class="logo">
+                <a href="<?php echo base_url($this->front_lang . '/home') ?>">
+                    <div class="logo_img"><img src="<?php echo base_url($website['website_logo']) ?>" alt=""></div>
+        </section>
+    </header> -->
+    <?php echo $content; ?>
+
+    <footer>
+        <div class="foot">
+            <div class="foot_logo">
+                <a href="<?php echo base_url($this->front_lang . '/home') ?>"><img src="<?php echo base_url($website['website_footer_logo']) ?>" alt=""></a>
+            </div>
+            <div class="foot_menu">
+                <?php for ($i = 0; $i < 3; $i++) : ?>
+                    <div class="school">
+                        <ul class="school_name"><?php echo (!empty($website['company_name' . $i])) ? $website['company_name' . $i] : '' ?></ul>
+                        <a href="<?php echo (!empty($website['company_google' . $i])) ? $website['company_google' . $i] : '' ?>" target="_blank"><?php echo (!empty($website['company_address' . $i])) ? $website['company_address' . $i] : '' ?></a>
+                        <ul class="school_tel"><?php echo (!empty($website['company_tel' . $i])) ? $website['company_tel' . $i] : '' ?></ul>
+                    </div>
+                <?php endfor; ?>
+            </div>
+            <div class="copyright">Copyright © 2019 Charles Language Center. All Rights Reserved. <a href="https://www.jddt.tw/" target="_blank">Designed by JDDT.</a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<?php if (isset($_SESSION['error']) && !empty($_SESSION['error'])) : ?>
+    <script>
+        alert("<?php echo $_SESSION['error'] ?>");
+    </script>
+<?php endif; ?>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+
+<script type="text/javascript">
+    function loadStyleSheet(src) {
+        if (document.createStyleSheet) document.createStyleSheet(src);
+        else {
+            var stylesheet = document.createElement('link');
+            stylesheet.href = src;
+            stylesheet.rel = 'stylesheet';
+            stylesheet.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(stylesheet);
+        }
+    }
+
+
+    loadStyleSheet("<?php echo base_url('public/front/' . $this->front_lang . '/css/mobile_menu.css') ?>");
+    loadStyleSheet("<?php echo base_url('public/front/' . $this->front_lang . '/css/reset.css') ?>");
+    loadStyleSheet("<?php echo base_url('public/front/' . $this->front_lang . '/css/fonts.css') ?>");
+    loadStyleSheet("<?php echo base_url('public/front/' . $this->front_lang . '/css/animate.css') ?>");
+    loadStyleSheet("<?php echo base_url('public/front/' . $this->front_lang . '/css/_lybox.css') ?>");
+</script>
+
+
+<script type="text/javascript">
+    var element = document.createElement("script");
+    myScript = document.getElementById("myScript");
+    if (myScript) {
+        var myStr = myScript.innerHTML.replace(/&amp;/g, "&");
+        myStr = myStr.replace(/&gt;/g, ">");
+        myStr = myStr.replace(/&lt;/g, "<");
+        myStr = myStr.replace(/&quot;/g, "\"");
+        myStr = myStr.replace(/&#039;/g, "'");
+        element.text = myStr;
+        $('#myScript').remove();
+        document.body.appendChild(element);
+    }
+</script>
+
+<script>
+    $("#toggle").click(function() {
+        $(this).toggleClass("on");
+        $("#menu").slideToggle();
+    });
+    new WOW().init();
+</script>
+
+<!--下拉項目選單-->
+<script>
+    $(document).ready(function() {
+        $('.dropdown').click(function(event) {
+            event.preventDefault();
+            $('.dropdown_open').slideToggle();
+            $('.menudown').toggleClass('menudown_active');
+        });
+        $('#menu .multiMenu li a').click(function(event) {
+            // event.preventDefault();
+
+        });
+
+    });
+</script>

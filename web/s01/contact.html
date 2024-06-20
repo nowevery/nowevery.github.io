@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header.js"></script>
+<main class="contact inner">
+    <div class="bread"><a href="index"><a href="index">HOME</a></a><span class="bread-space">/</span>客服中心</div>
+    <div class="container">
+        <h1>客服中心</h1>
+        <div class="contact-text text-center">客服信箱&emsp;<a href="mailto:jiaojiaojjlady@gmail.com">jiaojiaojjlady@gmail.com</a>
+            
+        </div>
+        <div class="text-center">如果您有任何問題，歡迎填寫下列表單，我們將盡快與您聯絡，謝謝!&emsp; <span class="red-font"> *</span> 必填</div> 
+        <form action="" class="form-style">
+            <div class="input-row">
+                <input type="text">
+                <label>姓名<span class="red-font"> *</span></label>            
+            </div>
+
+       
+            <div class="input-row">
+                <input type="email" name="email">
+                <label>Email<span class="red-font"> *</span></label>
+            </div>
+
+            <div class="input-row">
+                <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                <label>聯絡電話<span class="red-font"> *</span></label>
+            </div>
+            <div class="input-row margin30">
+                <p>類別<span class="red-font"> *</span></p>
+                <label><input type="radio" name="class"><span><i class="fas fa-check"></i>問題類別一</span></label>
+                <label><input type="radio" name="class"><span><i class="fas fa-check"></i>問題類別二</span></label>
+                <label><input type="radio" name="class"><span><i class="fas fa-check"></i>問題類別三</span></label>
+                <label><input type="radio" name="class"><span><i class="fas fa-check"></i>問題類別四</span></label>
+                <label><input type="radio" name="class"><span><i class="fas fa-check"></i>問題類別五</span></label>
+            </div>
+            <div class="input-row">
+                <label>諮詢內容<span class="red-font"> *</span></label>
+                <textarea ></textarea>
+                
+            </div>
+            <div class="input-row code-row">
+                <input type="text">
+                <label>驗證碼<span class="red-font"> *</span></label>
+                <div class="code-img"><img src="SRC/images/demo/verification_bemo.jpg" alt=""><i class="fas fa-redo-alt"></i></div>  
+            </div>
+            <div class="text-center">
+                <button type="reset" class="btn s1">重新填寫</button>
+                <button type="submit" class="btn s2">確定送出</button> 
+            </div>
+            
+        </form>      
+    </div>
+
+</main>
+
+<script src="SRC/js/_footer.js"></script>

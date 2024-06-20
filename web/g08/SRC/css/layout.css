@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+* { outline: none; }
+input,textarea{outline:none}  
+a{text-decoration:none;}
+a:hover{ text-decoration:none; transition: all .3s;}
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {	
+	margin: 0px 0px 0px 0px;
+	font-family:"微軟正黑體", Arial, Helvetica,Meiryo, sans-serif,"新細明體";
+	letter-spacing: 1px;
+	background-color: #fff;
+	position: relative;
+	-webkit-text-size-adjust: none;
+	line-height: 1.6;
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper { margin:0px auto; width:100%;}
+header { margin:0px auto 0px auto; width:100%; height:79px; position: absolute; overflow: hidden; z-index:9999;}
+main { margin:0px auto; width:100%; height:auto; position: relative;}
+footer { margin:0px auto 0px auto; padding:0px 0; width:100%; height:auto; overflow: hidden; }
+footer .fbg{ width:100%; height:auto; overflow: hidden; background:#262524; padding:35px 0 20px; }
+footer .fbg h1{ width:100%; height:auto; overflow: hidden; text-align:center; margin-bottom:20px;}
+footer .fbg .add{ width:100%; height:auto; overflow: hidden; text-align:center; line-height:1.5;}
+footer .fbg .add li{ display:inline-block; font-size: 14px; color:#fff; }
+footer .fbg .add li a{ color:#fff; }
+footer .fbg .add li a:hover{ color:#96948a; }
+
+footer .fbg .add li:last-child:after {
+	display: none;
+}
+footer .copyright .box-1{color: #666;}
+footer .copyright { width:100%; background:#262524; font-size: 12px; color:rgba(255,255,255,0.6); line-height:2; text-align:center; padding:5px 0px 20px;}
+footer .copyright a{ color:rgba(255,255,255,0.5); }
+footer .copyright a:hover{ color:rgba(255,255,255,1); text-decoration:underline;}
+
+@media screen and (max-width:600px){
+footer .fbg .add li{
+	display: block;
+	margin-bottom: 5px;
+}
+
+}
+
+
+@media screen and (min-width:600px){
+footer .fbg .add li:after {
+	content: '|';
+	margin: 0 10px 0 15px; color:#a7a7a7; 
+}	
+}

@@ -1,0 +1,52 @@
+.pagination {
+    border-radius: 0px;
+    margin: 40px 0;
+}
+
+.pagination a {
+	font-size: 12px;
+	cursor: pointer;
+	color: #777;
+  	padding: 5px 15px;
+  	border-top: 1px solid #ccc;
+  	border-left: 1px solid #ccc;
+  	border-bottom: 1px solid #ccc;
+}
+
+.pagination a:hover {
+	color: #fff;
+	background: #5884cd;
+	text-decoration: none;
+}
+
+.pagination a.jp-previous { 
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+ }
+.pagination a.jp-next { 
+  	border-right: 1px solid #ccc;
+  	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+ }
+
+.pagination a.jp-current, a.jp-current:hover { 
+	background-color: #5884cd;
+	color: #fff;
+}
+
+.pagination a.jp-disabled, a.jp-disabled:hover {
+	background-color: #5884cd;
+	color: #fff;
+}
+
+.pagination a.jp-current, a.jp-current:hover,
+.pagination a.jp-disabled, a.jp-disabled:hover {
+	background-color: #5884cd;
+}
+label{
+	font-weight: normal;
+}
+.pull-left select.form-control{
+	width: auto;
+	display: inline-block;
+}

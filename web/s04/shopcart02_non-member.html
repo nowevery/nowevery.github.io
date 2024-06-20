@@ -1,0 +1,154 @@
+<meta charset="utf-8">
+<script src="SRC/js/header.js"></script>
+<main class="shopcart">
+
+    <div class="inner  shopcart-row"> 
+        <div class="shopcart-left-info">
+            <div class="top-features">
+                <nav class="bread"><a href="shopcart.html">夢想清單</a><span class="bread-space">/</span>資料填寫</nav>
+            </div>
+            <div class="shopcart-form-title">選擇付款方式</div>
+            <div class="shopcart-pay-content">
+                <div class="shopcart-pay-item">
+                    <input type="radio" name="pay" id="pay1" class="hide">
+                    <label for="pay1">線上刷卡</label>
+                    <div class="shopcart-pay-box">
+                        線上刷卡，提供VISA、Master、JCB和聯合簽帳卡等四種卡別。
+                    </div>                    
+                </div>
+                <div class="shopcart-pay-item">
+                    <input type="radio" name="pay" id="pay2" class="hide">
+                    <label for="pay2"><img src="SRC/images/Line_pay_logo.svg">LINE Pay</label>
+                    <div class="shopcart-pay-box">
+                        LINE Pay說明
+                    </div>                   
+                </div>
+            </div>
+            <div class="shopcart-form-title">填寫資訊</div>
+            <div class="form-style">
+                <div class="input-row">
+                    <input type="text" placeholder="">
+                    <label>姓名</label>
+                </div>
+                <div class="input-row">
+                    <input type="email" name="email">
+                    <label>Email</label>            
+                </div>
+                <div class="input-row">
+                    <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    <label>電話</label>
+                </div>      
+                <div class="invoice">
+                    <div class="form-title">請選擇發票</div>
+                    <input type="radio" name="Invoice" id="i1" class="hide"><label for="i1">二聯式發票</label>
+                    <input type="radio" name="Invoice" id="i2" class="hide"><label for="i2">三聯式發票</label>
+                    <div class="invoice-box">
+                        <div class="title">三聯式發票</div>
+                        <div class="name">公司抬頭</div>
+                        <input class="sign_up_inpt" type="text"  >
+                        <div class="name">統一編號</div>
+                        <input class="sign_up_inpt" type="text"  >
+                    </div>
+                </div>
+                <div class="input-row form-textarea">
+                    <textarea></textarea>
+                    <label class="form-title">備註</label>
+                </div>
+                <div class="input-row">
+                    <input type="password" class="password">
+                    <label>請設定密碼</label>
+                    <i class="far fa-eye-slash show_pass"></i>  
+                </div>
+                <div class="input-row">
+                    <input type="password" class="password">
+                    <label>確認密碼</label>
+                    <i class="far fa-eye-slash show_pass"></i>  
+                </div>
+
+                <div class="checkbox-row">
+                   <input type="checkbox" id="Email" class="hide"><label for="Email">訂閱電子報</label> 
+                </div>
+                <div class="checkbox-row">
+                   <input type="checkbox" id="terms"  class="hide"><label for="terms">我已詳細閱讀<span id="terms-open">使用條款</span></label> 
+                </div>
+                
+                <a href="shopcart03.html" class="login-btn mt30">確認資料</button></a>        
+            </div>
+        </div>
+
+        
+        <div class="shopcart-right-prod">
+            <div class="shopcart-right-prod-scroll">
+                <div class="shop-item row j-s a-c">
+                    <div class="shop-left row j-s a-c">
+                        <a href="products_detail.html" class="a-img">
+                            <img src="SRC/images/demo/demo3.jpg">
+                            <span class="shop-num">1</span>
+                        </a>
+                        <div class="shop-info">
+                            <div class="charity-name one-ellipsis">小編強力推薦</div>
+                            <div class="shop-name two-ellipsis">幫助森林保護團體</div>
+                        </div>
+                    </div>
+
+                    <div class="shop-right">
+                        <div class="shop-price">NT<span>$300</span></div>
+                    </div>              
+                </div>
+                <div class="shop-item row j-s a-c">
+                    <div class="shop-left row j-s a-c">
+                        <a href="products_detail.html" class="a-img">
+                            <img src="SRC/images/demo/demo2.jpg">
+                            <span class="shop-num">1</span>
+                        </a>
+                        <div class="shop-info">
+                            <div class="charity-name one-ellipsis">最新上架</div>
+                            <div class="shop-name two-ellipsis">幫助森林保護團體</div>
+                        </div>
+                    </div>
+
+                    <div class="shop-right">
+                        <div class="shop-price">NT<span>$300</span></div>
+                    </div>              
+                </div>
+                <div class="shop-item row j-s a-c">
+                    <div class="shop-left row j-s a-c">
+                        <!-- 支持創作者 因為沒有詳細頁所以不連結 -->
+                        <div class="a-img">
+                            <img src="SRC/images/demo/prod-r.jpg">
+                            <span class="shop-num">1</span>
+                        </div>
+                        <div class="shop-info">
+                            <div class="charity-name one-ellipsis">支持創作者:鐘美梅</div>
+                            <div class="shop-name two-ellipsis">遠方希望</div>
+                        </div>
+                    </div>
+                    <div class="shop-right">
+                        <div class="shop-price">NT<span>$500</span></div>
+                    </div>              
+                </div>                
+            </div>
+            <div class="shop-total">總計<div class="shop-price">NT<span>$600</span></div></div> 
+        </div>
+
+        <div class="dream-drop"><div class="dream-drop-text">查看夢想清單<i class="fas fa-chevron-down"></i></div> <div class="shop-price">NT<span>$600</span></div></div>
+
+    </div>
+
+    <div class="terms-open lightbox">
+        
+        <div  class="lightbox-content">
+            <img class="lightbox-close" src="SRC/images/close.svg">
+            <div class="lightbox-scroll">
+                <div class="title">使用條款</div>
+                <div class="user_editor editor-content page-editor">
+                    <?php include('_terms_text.html') ?>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="SRC/js/footer.js"></script>

@@ -1,0 +1,18 @@
+document.writeln('<ul class="member-left hide-1024">');
+document.writeln('	<li>	');
+document.writeln('		<a href="member.html">會員首頁</a>');
+document.writeln('	</li>');
+document.writeln('	<li>');
+document.writeln('		<a href="member_account.html">個人資料</a>');
+document.writeln('	</li>');
+document.writeln('	<li>');
+document.writeln('		<a href="member_favorite.html">我的最愛</a>	');
+document.writeln('	</li>	');
+document.writeln('	<li>');
+document.writeln('		<a href="member_order.html">訂單查詢</a>		');
+document.writeln('	</li>');
+document.writeln('	<li>');
+document.writeln('		<a href="index.html">登出</a>		');
+document.writeln('	</li>');
+document.writeln('</ul>');
+document.writeln('<div class="show-1024 m-member-menu"><span></span><span></span><span></span></div>');

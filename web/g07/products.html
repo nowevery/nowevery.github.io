@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+  <div class="main_top"></div> 
+  <div class="page-banner wow fadeIn">
+    <picture>
+      <source media="(min-width: 800px)" srcset="images/demo/SSEC-web-banner.png">
+      <img src="images/demo/pcweb-banner.png" alt="">
+    </picture>
+    <div class="banner_ttbox">
+      <h2>產品系列</h2>
+    </div>
+  </div>
+  <main>
+    <section class="wow fadeIn">
+      <!-- 顯示當前所在分類 -->
+      <div class="m-PageTitle box-1">JS系列</div>
+      <div class="place">
+        <div class="box-1">
+          <li class="current"><a href="products.html">JS系列</a></li>
+          <li><a href="products.html">JL系列</a></li>
+          <li><a href="p_contatc.html">產品洽詢</a></li>
+        </div>  
+      </div>  
+      
+    </section>     
+    <section class="box-1 wow fadeIn">
+      <div class="content">
+        <div class="articleTitle"><span>JS系列</span></div>
+        <div class="news03">
+          <ul>
+            <?php for($i=0; $i < 12; $i++) {  ?>
+            <li>
+                <div class="geeks02">
+                  <div class="pic"><img src="images/demo/news02.jpg"></div>
+                </div>  
+                <div class="ttbox"> 
+                  <h2>多功能數控蝸桿加工機</h2> 
+                  <p>
+                    型號: JS-00001<br>
+                    規格: N/A
+                  </p>    
+                </div>
+                <div class="pro-btn">
+                  <a class="button slide02" href="p_contatc.html">產品洽詢</a>
+                  <a class="button slide02" href="products_view.html">詳細內容</a>
+                </div>
+            </li>
+             <?php } ?>
+          </ul>
+        </div>
+        <div class="pagebox">
+          <div class="page">
+            <a href="javascript: void(0)">&lt;</a>
+            <a href="#?page=1" class="current">1</a>
+            <a href="#?page=2">2</a>
+            <a href="#?page=3">3</a>
+            <a href="#?page=4">4</a>
+            <a href="#?page=5">5</a>
+            <a href="javascript: void(0)">&gt;</a>
+          </div>  
+          <div class="page02">
+            <span>Page</span>
+            <input type="text" class="input-style" style="width: 80px;">
+          </div>  
+        </div>
+      </div>
+    </section>    
+  </main>
+  <script src="_foot.js"></script>

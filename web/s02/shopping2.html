@@ -1,0 +1,133 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_logo.js"></script>
+<main class="shopcart shopping-item inner">
+    <div class="shop-step">
+        <span class="step step-bor">購物清單</span>
+        <span class="step active step-bor">填寫資料</span>
+        <span class="step">訂單完成</span>
+    </div>
+    <div class="inner shop-row">
+        <div class="shop-left">
+
+            <div class="shop c-o">
+                <div class="shop-item shop-item-top">
+                    <div class="shop-info">商品</div>
+                    <div class="shop-quantity">數量</div>
+                    <div class="shop-price">小計</div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-info">
+                        <a href="products_detail.html" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                        <a href="products_detail.html" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                        <div class="spe">顏色：粉色</div>
+                        <div class="spe">尺寸：S</div>
+                    </div>
+                    <div class="shop-quantity"><span class="show-800">數量：</span>1</div>
+                    <div class="shop-price">$999</div>
+
+                </div>
+                <div class="shop-item">
+                    <div class="shop-info">
+                        <a href="products_detail.html" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                        <a href="products_detail.html" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                        <div class="spe">顏色：粉色</div>
+                        <div class="spe">尺寸：S</div>
+                    </div>
+                    <div class="shop-quantity"><span class="show-800">數量：</span>1</div>
+                    <div class="shop-price">$999</div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-info">
+                        <a href="products_detail.html" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                        <a href="products_detail.html" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                        <div class="spe">顏色：粉色</div>
+                        <div class="spe">尺寸：S</div>
+                    </div>
+                    <div class="shop-quantity"><span class="show-800">數量：</span>1</div>
+                    <div class="shop-price">$999</div>
+                </div>
+                <div class="pay-content s-info-ul">
+                    <div class="box-title">選擇付款與運送方式</div>
+                    <div class="pay-box">
+                        <select id="sp1">
+                            <option value="0" selected="SELECTED">付款方式</option>
+                            <option value="1">線上刷卡</option>
+                            <option value="2">ATM(非虛擬帳號 WEB ATM)</option>
+                            <option value="3">物流商貨到收款</option>
+                        </select>
+                        <div class="hide tip sp1-a">線上刷卡說明</div>
+                        <div class="hide tip sp1-b">ATM(非虛擬帳號 WEB ATM)</div> 
+                        <div class="hide tip sp1-c">物流商貨到收款</div>              
+                    </div>
+                    <div class="pay-box">
+                        <select id="sp2">
+                            <option value="0" selected="SELECTED">運送方式</option>
+                            <option value="1">黑貓宅急便</option>
+                        </select>
+                        <div class="hide tip sp2-a">黑貓宅急便，滿2,000元免加收60元運費</div>                
+                    </div>
+                </div>
+                <!-- 宅配 -->
+                <div class="s-info-ul send-box" id="send1">
+                    <div class="j-s check-title"><input type="checkbox" name="" id="buy" class="hide"><label for="buy">收件人同購買人資料</label></div>
+                    <div class="box-title">收件人資料</div>
+                    <div class="form_flex two-input"><input type="text" placeholder="收件人姓名">
+                        <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="聯絡電話">
+                    </div>
+
+                    <div class="form_flex">
+                        <div class="address-input w-100">
+                            <div class="address-input">
+                                <div id="twzipcode">
+                                </div>
+                                <input type="text" placeholder="地址"> 
+                            </div>
+                        </div>
+                    </div>
+                    <textarea placeholder="備註"></textarea>        
+                </div>
+
+            </div>
+            <div class="s-info-ul invoice">
+                <div class="box-title">選擇發票</div>
+                <input type="radio" name="Invoice" id="i1" class="hide">
+                <label for="i1">二聯式發票</label>
+                <input type="radio" name="Invoice" id="i2" class="hide">
+                <label for="i2">三聯式發票</label>
+                <div class="invoice-box">                
+                        <div class="form_flex">
+                            <input type="text" placeholder="公司抬頭">
+                        </div>
+                        <div class="form_flex">
+                            <input type="text" placeholder="統一編號">
+                        </div>                                    
+                </div>
+            </div>
+            <div class="shop order-detail-box">
+                <div class="cart-btn">
+                    <a class="btn s1" href="shopping.html">上一步
+                    </a><a href="shopping3.html" class="btn s2">確認付款</a>                
+                </div>
+            </div>
+        </div>
+        <div class="shop-right">
+            <div class="shop-total">
+                <div class="s-t"><span>3件商品</span><span>$2,997</span></div>
+                <div class="s-t sale-font"><span>紅利折扣</span> <span>- $200</span></div>
+                <div class="s-t"><span>退貨購物金</span><span>-$250</span></div>
+                <div class="s-t"><span>運費</span><span>$60</span></div>
+                <div class="s-t sale-font"><span>消費滿2000元免運費</span> <span>- $60</span></div>
+            </div>
+            <div class="shop-total">
+                <div class="s-t"><span>總計</span><span class="red-font">NT$2,547</span></div>
+
+                <div class="s-t"><span>本次消費累計紅利</span><span class="red-font">+1000點</span></div>
+            </div>
+        </div>             
+    </div>
+  
+
+</main>
+
+
+<script src="SRC/js/_footer.js"></script>

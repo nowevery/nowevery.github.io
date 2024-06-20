@@ -1,0 +1,262 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_logo.js"></script>
+<main class="member inner">
+    <div class="pro-top">
+        <div class="bread"><a href="index.html">Home</a><span class="bread-space">/</span>會員專區</div>
+    </div>
+    <div class="container row">
+        <div class="mobile-menu"><span>訂單管理</span><i class="fas fa-chevron-down"></i></div>
+        <div class="left-menu member-menu">
+            <div class="menu-item">
+                <div class="menu-sub">
+                    <!-- 當前分類 加.active -->
+                    <a href="member_area.html" class="menu-sub-a">會員專區</a>
+                    <a href="member_account.html" class="menu-sub-a">個人資料</a>
+                    <a href="member_favorite.html" class="menu-sub-a">收藏清單</a>
+                    <a href="member_order.html" class="menu-sub-a active">訂單管理</a>
+                    <a href="index.html"  class="menu-sub-a">登出</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="member-name show-1024">訂單查詢</div>
+            <form action="member_order.html" class="order-search">
+                <select>
+                    <option value="" selected="">付款方式</option>
+                    <option value="">線上刷卡</option>
+                    <option value="">ATM(非虛擬帳號 WEB ATM)</option>
+                    <option value="">物流商貨到收款</option>
+                </select>
+                <div class="order-search-input">
+                    <input type="text" placeholder="請輸入產品名稱" name="search">
+                    <button type="submit" class="btn1">搜尋</button>                        
+                </div>
+            </form>
+
+            <!-- 已出貨 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                        <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                        <li class="info">物流單號：1002-6790-5761</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <!-- 退換貨 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <!-- 未處理 -->
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                        <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                        <li class="info">物流單號：1002-6790-5761</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">已出貨</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                        <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                        <li class="info">出貨日期：2020/05/05</li>
+                        <li class="info">物流單號：1002-6790-5761</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">未處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="Order-reply">匯款回覆</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li><a href="order_cancel.html">取消訂單</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-item-top"><div>訂單編號<span class="red">21542454846</span></div><span class="mode">退換貨處理</span></div>
+                <div class="order-item-left"><a href="order_detail.html"><img src="SRC/images/demo/01.jpg"></a></div>
+                <div class="order-item-right">
+                    <ul>
+                       <li class="info">訂單金額：NT$9,998</li>
+                        <li class="info">訂購日期：2021/02/12</li>
+                        <li class="info">付款方式：ATM轉帳</li>
+                        <li class="info">運送方式：黑貓宅急便</li>
+                    </ul>
+                    <ul class="order-set-up">
+                        <li class="gray">匯款已確認</li>
+                        <li class="Order-ask">訂單詢問</li>
+                        <li class="gray">已出貨不可取消</li>
+                        <li><a href="order_return.html">商品退貨</a></li>
+                    </ul>
+                </div>
+                <div class="order-item-bottom">
+                    <a href="order_detail.html">詳細訂單<i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                </div>                
+            </div>             
+            
+            <!-- 一頁10筆 -->               
+            <div class="pagination">
+                <a href="" class="page-btn">PREV</a>
+                <a href="">1</a><a href="" class="active">2</a><a href="">3</a><a href="">4</a><a href="">5</a>
+                <a href="" class="page-btn">NEXT</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- 訂單詢問 -->
+<script src="SRC/js/_order_ask.js"></script>
+
+<!-- 匯款回覆 -->
+<script src="SRC/js/_order_reply.js"></script>
+
+
+<script src="SRC/js/_footer.js"></script>

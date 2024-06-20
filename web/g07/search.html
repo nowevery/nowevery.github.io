@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+  <div class="main_top"></div> 
+  <main>   
+    <section class="box-1 wow fadeIn">
+      <div class="content">
+        <div class="articleTitle"><span>搜尋結果</span></div>
+        <div class="search-result">搜尋關鍵字 <span>自動</span>，共 <span>26</span> 筆產品</div>
+        <div class="news03">
+          <ul>
+            <?php for($i=0; $i < 12; $i++) {  ?>
+            <li>
+                <div class="geeks02">
+                  <div class="pic"><img src="images/demo/news02.jpg"></div>
+                </div>  
+                <div class="ttbox"> 
+                  <h2>多功能數控蝸桿加工機</h2> 
+                  <p>
+                    型號 : JS-00001<br>
+                    規格 : N/A
+                  </p>    
+                </div>
+                <div class="pro-btn">
+                  <a class="button slide02" href="p_contatc.html">產品洽詢</a>
+                  <a class="button slide02" href="products_view.html">詳細內容</a>
+                </div>
+            </li>
+             <?php } ?>
+          </ul>
+        </div>
+        <div class="pagebox">
+          <div class="page">
+            <a href="javascript: void(0)">&lt;</a>
+            <a href="#?page=1" class="current">1</a>
+            <a href="#?page=2">2</a>
+            <a href="#?page=3">3</a>
+            <a href="#?page=4">4</a>
+            <a href="#?page=5">5</a>
+            <a href="javascript: void(0)">&gt;</a>
+          </div>  
+          <div class="page02">
+            <span>Page</span>
+            <input type="text" class="input-style" style="width: 80px;">
+          </div>  
+        </div>
+      </div>
+    </section>    
+  </main>
+  <script src="_foot.js"></script>

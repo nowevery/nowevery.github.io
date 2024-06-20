@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+* { outline: none;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+ box-sizing: border-box;
+ }
+input,textarea{outline:none}  
+a{text-decoration:none;}
+a:hover{ text-decoration:none;}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, th, td, div, dl, dt, dd, pre, code, form, fieldset, legend, input, button, textarea {
+  margin: 0;
+  padding: 0;
+}
+img{
+	max-width: 100%;
+}
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+body {	
+	margin: 0px 0px 0px 0px; padding: 0;
+	font-family:"微軟正黑體","Microsoft JhengHei","Arial";
+	
+	background-color: #fff;
+	position: relative;
+	-webkit-text-size-adjust: none;
+}
+#wrapper { margin:0px auto; width:100%; height:auto; overflow: hidden;}
+header { margin: 0px auto 0px auto;
+    padding: 0;
+    height: auto;
+
+    width: 100%;
+    background: #fff;}
+main { margin:0px auto 0px auto; width:100%; height:auto;  padding:0px 0px 0px 0px;}
+footer { margin:0px auto 0px auto; padding:0 0 0px 0; width:100%; 
+height:auto; overflow: hidden; background: #d9e0eb;
+display: flex;
+  justify-content: space-between;
+}
+footer .logo { padding:0 0px 0 0; margin: 0px 0px 0 0;}
+footer .logo img{ width: 100%; max-width: 180px;}
+footer .flist { width:auto; margin:0 0 0px 0; padding:0px 0 10px 0; list-style:none; color: #54565A; font-size: 12px;
+display: flex;
+  justify-content: flex-end;
+}
+footer .flist ul { margin:0 0 0px 0; padding:0px 0 0px 0; list-style:none; color: #54565A; font-size: 14px; }
+footer .flist ul li{ margin:0 0px 0px 0; padding:0 20px 0 0px; list-style:none; display: inline-block;}
+footer .flist ul li a{ color: #222;}
+footer .flist ul li a:hover{     color: #002063;}
+footer .flist ul li:last-child{ padding:0 0px 0 0px;}
+footer .flist .copyright { margin:0 0px 0px 30px; }
+footer .flist ul li a:before{ content: '';width: 5px;height: 5px;display: inline-block;background: #002063;vertical-align: baseline;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    border-radius: 50%;}
+@media only screen and (min-width: 0px) and (max-width: 1220px) {
+footer .flist { display: block;}
+footer .flist ul { width: 100%; }
+footer .flist .copyright { width: 100%; margin:10px 0px 0px 0px; text-align: right;}
+}
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+footer { display: block; text-align: center;}
+footer .logo {  width:100%; display: flex; justify-content: center; align-items: center;}
+footer .flist ul { margin:20px 0px 0px 0px; padding:0 0px 0 0px;}
+footer .flist .copyright { text-align: center;}
+}
+
+@media screen and (max-width: 750px) {
+	footer .logo h1{
+		display: none;
+	}
+	footer .flist ul li{
+		padding: 0 10px 0 0px;
+		font-size: 14px;
+	}
+	footer .flist .copyright{
+		font-size: 12px;
+	}
+
+}

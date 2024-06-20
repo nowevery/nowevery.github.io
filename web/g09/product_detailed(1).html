@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+<script src="_header.js"></script>
+<link rel="stylesheet" href="css/slick.css" class="">
+<link rel="stylesheet" href="css/slick-theme.css" class="">
+
+<main>
+    <article>
+        <div class="bg_box">
+            <ul class="bgbx_a1"></ul>
+            <ul class="bgbx_a2"></ul>
+            <ul class="bgbx_a3"></ul>
+        </div>
+        <section class="page_topBox">
+            <div class="page_top_banner">
+                <ul class="page_top_bannerPhoto"><img src="images/about_bgPh01.png" alt=""></ul>
+            </div>
+        </section>
+        <section class="peg_content">
+
+            <div class="peg_cnbox">
+                <div class="peg_bar_als">
+                    <div class="peg_bread_crumbs">
+                        <ul class="peg_bread_txt"><a href="index.html">首頁</a></ul>
+                        <ul class="peg_bread_icc"><img src="images/bread_crumbs_bs.png" alt=""></ul>
+                        <ul class="peg_bread_txt"><a href="product.html"></a>產品資訊</ul>
+                        <ul class="peg_bread_icc"><img src="images/bread_crumbs_bs.png" alt=""></ul>
+                        <ul class="peg_bread_txt"><a href="product_list.html">JL系列</a></ul>
+                    </div>
+                </div>
+                <div class="product_allBox_SA">
+                    <script src="_proMenu.js"></script>
+                    <div class="product_box02">
+                        <div class="product_detailed_Conbox">
+                            <div class="prod_dt_CB_Left">
+                                <div class="prod_detailed_phbox">
+                                    <div class="slider slider-for">
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                    </div>
+                                    <div class="slider slider-nav">
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                        <div class="prod_det_pht"><img src="images/porduct_p01.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prod_dt_CB_Right">
+                                <ul class="news_box_txtc02">包裝自動化設備</ul>
+                                <ul class="pord_box_txsst02">JL系列</ul>
+                                <ul class="pord_box_txsst02">機械是由機械結構（機構）組成，機械結構再由機械元件（構件）組成，是機械工程學的一個基本概念。機械就是能幫助人們節省工作難度或省力的工具裝置。有一些機械單純轉換力的大小或（及）方向，被稱為簡單機械。而複雜機械就是由二種或二種以上的簡單機械構成。</ul>
+                                <a href="contact.html" class="con-btn">產品洽詢</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<script src="js/slick.js"></script>
+<script>
+	 $('.slider-for').slick({
+	  slidesToShow: 1,
+  	  slidesToScroll: 1,
+  	  autoplaySpeed: 2000,
+	  arrows: false,
+	  asNavFor: '.slider-nav',
+	});
+	$('.slider-nav').slick({
+	slidesToShow: 3,
+  	slidesToScroll: 1,
+  	asNavFor: '.slider-for',
+  	dots: false,
+	arrows: false,
+  	focusOnSelect: true
+	});
+</script>
+<script>
+    $(".proda4").click(function(){
+        $(".prodb4").toggleClass("open");
+    });
+</script>
+<script src="_footer.js"></script>

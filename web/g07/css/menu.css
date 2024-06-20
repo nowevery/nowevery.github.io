@@ -1,0 +1,102 @@
+/* nav */
+.nav-menu,.nav-menu ul,.nav-menu li,.nav-menu a { margin: 0; padding: 0; line-height: normal; list-style: none; display: block; position: relative; }
+.nav-menu{ display: flex; align-items: center; justify-content: center; }
+.nav-menu ul { opacity: 0; position: absolute; top: 100%; z-index: 1; -webkit-transition: opacity .3s; transition: opacity .3s; }
+.nav-menu li:hover > ul { opacity: 1; z-index: 1000;     height: auto;padding: 15px 20px;}
+
+.nav-menu li { cursor: default; white-space: nowrap; display: flex; align-items: center; justify-content: center; }
+.nav-menu ul li { float: none; }
+
+/* sub width */
+.nav-menu ul { text-align: left;
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px 20px; background:rgba(0,32,99,.95);
+  border-top: 0px solid #007580;
+  z-index: -999;
+}
+
+/* root */
+.nav-menu a {
+  padding: 0 20px;
+  color: #444;
+  font-size: 17px;
+  line-height: 40px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+.nav-menu a {
+  padding: 0 15px;
+  font-size: 18px;
+}
+}
+@media screen and (max-width: 1200px) {
+.menu-btn {
+    display: block;
+    margin-right: calc(4% - 10px);
+  }
+}
+
+/* root: active */
+.nav-menu > li > .nav-active { }
+
+/* root: hover/persistence */
+.nav-menu a:hover,.nav-menu a:focus,.nav-menu li:hover a {
+  color: #002063;
+}
+
+/* 2 */
+.nav-menu li ul{ text-align: left;
+  display: flex; align-items: flex-start; justify-content: flex-start;height: 0;overflow: hidden;padding: 0;
+}
+.nav-menu li li a,.nav-menu li:hover li a {
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+}
+.nav-menu li li:before {
+  content: "\f0da";
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  font-size: 18px;
+  color: #537cc4;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+/* 2: hover/persistence */
+.nav-menu li:hover li a:hover,.nav-menu li:hover li a:focus,.nav-menu li:hover li:hover a {
+  color: #fff;
+  opacity: .5;
+  transition: .3s;
+}
+
+/* 3 */
+.nav-menu li:hover li:hover li a {
+  background: #444;
+}
+
+/* 3: hover/persistence */
+.nav-menu li:hover li:hover li a:hover,.nav-menu li:hover li:hover li a:focus,.nav-menu li:hover li:hover li:hover a {
+  background: #333;
+}
+
+/* 4 */
+.nav-menu li:hover li:hover li:hover li a {
+  background: #333;
+}
+
+/* 4: hover */
+.nav-menu li:hover li:hover li:hover li a:hover,.nav-menu li:hover li:hover li:hover li a:focus {
+  background: #222;
+}
+
+/* vertical */
+.nav-vertical { max-width: 220px; }
+.nav-vertical ul { top: 0; left: -9999px; }
+.nav-vertical li { width: 100%; float: none; }
+.nav-vertical li:hover > ul { left: 100%; }
+
+

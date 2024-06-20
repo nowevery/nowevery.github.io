@@ -1,0 +1,106 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_logo.js"></script>
+<main class="member inner">
+    <div class="pro-top">
+        <div class="bread"><a href="index.html">Home</a><span class="bread-space">/</span>會員專區</div>
+    </div>
+    <div class="container row">
+        <div class="mobile-menu"><span>訂單管理</span><i class="fas fa-chevron-down"></i></div>
+        <div class="left-menu member-menu">
+            <div class="menu-item">
+                <div class="menu-sub">
+                    <!-- 當前分類 加.active -->
+                    <a href="member_area.html" class="menu-sub-a">會員首頁</a>
+                    <a href="member_account.html" class="menu-sub-a">個人資料</a>
+                    <a href="member_favorite.html" class="menu-sub-a">願望清單</a>
+                    <a href="member_order.html" class="menu-sub-a active">訂單管理</a>
+                    <a href="index.html"  class="menu-sub-a">登出</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="member-name show-1024">商品退貨</div>
+            <div class="shop order-detail-box">
+                <div class="number">訂單編號21542454846</div>
+                <div class="shop-item shop-item-top">
+                    <div class="shop-info">商品</div>
+                    <div class="shop-quantity">數量</div>
+                    <div class="shop-price">小計</div>
+                </div>
+                <div class="return-item">
+                    <input type="checkbox" name="return" id="r1">
+                    <label for="r1">
+                        <div class="shop-item">
+                            <div class="shop-info">
+                                <a href="" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                                <a href="" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                                <div class="spe">顏色：粉色</div>
+                                <div class="spe">尺寸：S</div>
+                            </div>
+                            <div class="shop-quantity">1</div>
+                            <div class="shop-price">$999</div>
+                        </div>
+                    </label>                    
+                </div>
+
+                <div class="return-item">
+                    <input type="checkbox" name="return" id="r2">
+                    <label for="r2"> 
+                        <div class="shop-item">
+                            <div class="shop-info">
+                                <a href="" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                                <a href="" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                                <div class="spe">顏色：粉色</div>
+                                <div class="spe">尺寸：S</div>
+                            </div>
+                            <div class="shop-quantity">1</div>
+                            <div class="shop-price">$999</div>
+                        </div>
+                    </label>                    
+                </div>
+                <div class="return-item">
+                    <input type="checkbox" name="return" id="r3">
+                    <label for="r3">
+                        <div class="shop-item">
+                            <div class="shop-info">
+                                <a href="" class="pic"><img src="SRC/images/demo/02.jpg"></a> 
+                                <a href="" class="name  two-ellipsis">簡約條紋百搭上衣</a>
+                                <div class="spe">顏色：粉色</div>
+                                <div class="spe">尺寸：S</div>
+                            </div>
+                            <div class="shop-quantity">1</div>
+                            <div class="shop-price">$999</div>
+                        </div>
+                    </label>                    
+                </div>
+            </div>
+           
+            <form class="r-form order-detail-box ">
+                <div class="title">申請退貨</div>
+                
+                <div class="form_flex"><span>姓名</span>張先生</div> 
+                <div class="form_flex">
+                    <span>E-mail</span>                  
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="form_flex"><span>聯絡電話</span>
+                    <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="聯絡電話">
+                </div>
+                <div class="form_flex">
+                    <span>退貨原因</span>
+                    <textarea placeholder="退貨原因"></textarea>
+                </div><br>
+                <div class="btn-box text-center">
+                    
+                    <button type="reset" class="btn2">重新填寫</button>
+                    <button type="submit" class="btn1">確定退貨</button>
+                </div>   
+            </form>
+        </div>
+    </div>
+
+</main>
+
+
+
+<script src="SRC/js/_footer.js"></script>

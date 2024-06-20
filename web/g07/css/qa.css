@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+.accordion-container {
+    position: relative;
+    width: 100%;
+    outline: 0;
+    cursor: pointer;
+    padding:20px 0 0px 0;
+}
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin:0 0 10px 0;
+    padding: 8px 20px 18px 20px; height:auto; overflow: hidden; 
+    font-size: 1.125em;
+    font-weight: normal;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-bottom: 2px solid #CACACA;
+}
+.accordion-container .article-title:hover{
+    color: #007580;
+    border-bottom: 2px solid #007580;
+}
+.accordion-container .content-entry.open .article-title {
+    border-bottom: none;
+}
+.accordion-container .content-entry.open .article-title span{
+    color: #007580;
+    font-weight: 600;
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-style: normal;
+    font-size: 1.25em;
+    color: #0079c1;
+    border: 1px solid #007580;
+    padding: 0;
+    border-radius: 3px;
+    width: 30px; height: 30px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.accordion-container .content-entry i:before {
+    content: "\e92f";
+    font-family: 'Feather Icons';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.accordion-container .content-entry.open i:before {
+    content: "\e92d";
+    font-family: 'Feather Icons';
+    font-weight: normal;
+    font-style: normal;
+}
+.accordion-container .article-title span{
+  width:calc(100% - 80px); float:left; color:#606060; font-size: 20px;
+}
+.accordion-container .article-title em{
+  width:40px; float:left; margin:0 0 0 0px; padding: 0 0 0 0px; 
+  color:#007580;
+  font-size: 20px; position: relative;
+  font-family:'Gill Sans MT', 'arial';
+  font-style: normal;
+  font-weight: 600;
+}
+.accordion-content {
+    display: none;
+    padding: 0px 0px 30px 0px;
+    line-height: 1.5; 
+}
+.accordion-container {
+    width: 100%;
+    margin: 1.875em auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 420px){
+.accordion-container .article-title span{
+  width:100%; 
+}
+.accordion-container .article-title b{
+  display: none;
+}
+.accordion-container .article-title em{
+  width:100%; margin:0px 0 10px 0px; text-align: left;
+}
+.accordion-container .content-entry i {
+    top: 5px;
+}
+}

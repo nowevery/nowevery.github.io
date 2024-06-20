@@ -1,0 +1,230 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+<script src="../../load-top.js"></script>
+  <div class="index-banner">
+    <div class="index-banner-mouse"><a href="#section-1" id="se01"><img src="images/mouse.svg" alt=""></a></div>
+      <ul class="index-banner-slick">
+        <li class="slick-item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/demo/ind_banner02.jpg"><img src="images/demo/ind_banner02-m.jpg">
+            </picture>
+          </a>
+        </li>
+        <li class="slick-item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/demo/ind_banner01.jpg"><img src="images/demo/ind_banner-m.jpg">
+            </picture>
+          </a>
+        </li>
+      </ul>
+  </div><!-- //index-banner -->
+
+
+
+
+
+  <main>
+    <div id="section-1" class="point"></div>
+    <section class="index-pdbox wow fadeIn">
+        <!--new_pdbox-->    
+        <div class="shortcut">    
+          <div class="title01 center">最新產品</div>
+          <div class="slider responsive">  
+            <!--pd-->    
+            <div class="new_pd">
+              <a href="products_view.html">
+                <div class="pic"><img src="images/demo/pd01.jpg"></div>        
+                <div class="txtbox">
+                  <div class="title">TS系列-機械名稱</div> 
+                </div>
+              </a>
+            </div>
+            <div class="new_pd">
+              <a href="products_view.html">
+                <div class="pic"><img src="images/demo/pd01.jpg"></div>        
+                <div class="txtbox">
+                  <div class="title">TS系列-機械名稱</div> 
+                </div>
+              </a>
+            </div>
+            <div class="new_pd">
+              <a href="products_view.html">
+                <div class="pic"><img src="images/demo/pd01.jpg"></div>        
+                <div class="txtbox">
+                  <div class="title">TS系列-機械名稱</div> 
+                </div>
+              </a>
+            </div> 
+            <div class="new_pd">
+              <a href="products_view.html">
+                <div class="pic"><img src="images/demo/pd01.jpg"></div>        
+                <div class="txtbox">
+                  <div class="title">TS系列-機械名稱</div> 
+                </div>
+              </a>
+            </div>
+            <div class="new_pd">
+              <a href="products_view.html">
+                <div class="pic"><img src="images/demo/pd01.jpg"></div>        
+                <div class="txtbox">
+                  <div class="title">TS系列-機械名稱</div> 
+                </div>
+              </a>
+            </div>                                   
+            <!--//pd-->  
+          </div>  
+        </div>
+        <!--//new_pdbox-->  
+    </section>    
+    <section class="index-section about" style="background-image: url('images/demo/banner_about.jpg')">
+      <div class="index-section-inner">
+        <div class="text-box">
+          <h2>專業的技術及服務<span>專業的服務、以及最新的設備</span></h2>
+          <a class="btn-style01" href="about.html">READ MORE</a>
+        </div><!-- //text-box -->
+      </div><!-- //index-section-inner -->
+    </section><!-- //index-section about -->
+    <section class="index-pdbox bg_gray02 wow fadeIn">
+        <!--certification_box-->    
+        <div class="shortcut02">    
+          <div class="title01 center">產品認證</div>
+          <div class="slider responsive02">  
+            <!--certification-->    
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer01.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer02.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer03.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer04.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer05.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer06.png"></div>  
+            </div>
+            <div class="new_cer">
+                <div class="pic"><img src="images/demo/cer02.png"></div>  
+            </div>
+            <!--//certification-->  
+          </div>  
+        </div>
+        <!--//certification_box-->    
+    </section>
+  </main>
+  <script src="_foot.js"></script>
+  <script src="../../load.js"></script>
+<link rel="stylesheet" type="text/css" href="SRC/css/slick.css" />
+<link rel="stylesheet" type="text/css" href="SRC/css/slick-theme.css" />
+<script type="text/javascript" src="SRC/js/effect01.js"></script>
+<script>
+				$(document).ready(function (){
+					// index banner slick
+					$('.index-banner-slick').slick({
+						infinite: true,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: false,
+						dots: true,
+						pauseOnHover: false,
+						autoplay: true,
+						autoplaySpeed: 5000,
+            fade: true
+					});					
+				});
+</script>
+
+<!--pd-->
+<script type="text/javascript">
+$('.responsive').slick({
+  arrows: true,
+  infinite: false,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1420,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+	{
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+	  
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+<!---//pd-->
+
+<!--certification-->
+<script type="text/javascript">
+$('.responsive02').slick({
+  arrows: true,
+  infinite: false,
+  autoplay: false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  responsive: [   
+	{
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+	{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+	  
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+<!---//certification-->
+
+<script type="text/javascript">
+$(function(){	
+	$('#se01').click(function(){
+		$('html,body').animate({scrollTop:$('#section-1').offset().top}, 800);
+	});	
+});
+</script>

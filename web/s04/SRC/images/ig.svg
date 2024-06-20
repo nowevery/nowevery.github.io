@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 169.1 169.1" style="enable-background:new 0 0 169.1 169.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="155.4532" y1="13.7281" x2="13.6844" y2="155.4969">
+		<stop  offset="0" style="stop-color:#7E00A8"/>
+		<stop  offset="0.1053" style="stop-color:#8F00A1"/>
+		<stop  offset="0.3681" style="stop-color:#B40091"/>
+		<stop  offset="0.6131" style="stop-color:#CE0086"/>
+		<stop  offset="0.8312" style="stop-color:#DE007F"/>
+		<stop  offset="1" style="stop-color:#E4007D"/>
+	</linearGradient>
+	<path class="st0" d="M122.4,0H46.7C20.9,0,0,20.9,0,46.7v75.8c0,25.7,20.9,46.7,46.7,46.7h75.8c25.7,0,46.7-20.9,46.7-46.7V46.7
+		C169.1,20.9,148.1,0,122.4,0z M154.1,122.4c0,17.5-14.2,31.7-31.7,31.7H46.7c-17.5,0-31.7-14.2-31.7-31.7V46.7
+		C15,29.2,29.2,15,46.7,15h75.8c17.5,0,31.7,14.2,31.7,31.7L154.1,122.4L154.1,122.4z"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="115.3688" y1="53.7687" x2="53.8" y2="115.3375">
+		<stop  offset="0" style="stop-color:#7E00A8"/>
+		<stop  offset="0.1053" style="stop-color:#8F00A1"/>
+		<stop  offset="0.3681" style="stop-color:#B40091"/>
+		<stop  offset="0.6131" style="stop-color:#CE0086"/>
+		<stop  offset="0.8312" style="stop-color:#DE007F"/>
+		<stop  offset="1" style="stop-color:#E4007D"/>
+	</linearGradient>
+	<path class="st1" d="M84.5,41C60.5,41,41,60.5,41,84.5s19.5,43.6,43.6,43.6s43.6-19.5,43.6-43.6C128.1,60.5,108.6,41,84.5,41z
+		 M84.5,113.1c-15.7,0-28.6-12.8-28.6-28.6C56,68.8,68.8,56,84.5,56s28.6,12.8,28.6,28.6C113.1,100.3,100.3,113.1,84.5,113.1z"/>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="137.702" y1="31.498" x2="122.1" y2="47.1">
+		<stop  offset="0" style="stop-color:#7E00A8"/>
+		<stop  offset="0.1053" style="stop-color:#8F00A1"/>
+		<stop  offset="0.3681" style="stop-color:#B40091"/>
+		<stop  offset="0.6131" style="stop-color:#CE0086"/>
+		<stop  offset="0.8312" style="stop-color:#DE007F"/>
+		<stop  offset="1" style="stop-color:#E4007D"/>
+	</linearGradient>
+	<path class="st2" d="M129.9,28.3c-2.9,0-5.7,1.2-7.8,3.2c-2.1,2-3.2,4.9-3.2,7.8c0,2.9,1.2,5.7,3.2,7.8c2,2,4.9,3.2,7.8,3.2
+		c2.9,0,5.7-1.2,7.8-3.2s3.2-4.9,3.2-7.8c0-2.9-1.2-5.7-3.2-7.8S132.8,28.3,129.9,28.3z"/>
+</g>
+</svg>

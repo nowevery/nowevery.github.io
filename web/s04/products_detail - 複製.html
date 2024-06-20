@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<script src="SRC/js/header.js"></script>
+<main class="products_detail">
+    <script src="SRC/js/_products_detail_top.js"></script>
+    <input type="radio" id="item1" name="item" class="hide" checked="">
+    <input type="radio" id="item2" name="item" class="hide">
+    <input type="radio" id="item3" name="item" class="hide"> 
+    <input type="radio" id="item4" name="item" class="hide">
+    <input type="radio" id="item5" name="item" class="hide">
+    <div class="tab-nav"  id="tab-nav">
+        <div class="tab-nav-bg">
+            <div class="full">
+                <div class="prod-left">            
+                    <label for="item1"><a href="products_detail.html#tab-nav"><span>專案內容</span></a></label>
+                          
+                    <label for="item2"><a href="products_detail_item2.html#tab-nav"><span>相關活動</span></a></label>
+                      
+                    <label for="item3"><a href="products_detail_item3.html#tab-nav"><span>互動</span></a></label>
+                       
+                    <label for="item4"><a href="products_detail_item4.html#tab-nav"><span>FAQ</span></a></label>
+                     
+                    <label for="item5"><a href="products_detail_item5.html#tab-nav"><span>捐款名單</span></a></label>   
+                </div>
+                <div class="prod-right"></div>         
+            </div>             
+        </div>
+    </div>
+    <div class="prod-bottom full">
+        <div class="tab-content">
+            <div class="tab-box">
+                <!-- 專案內容 -->
+                <?php include('_item1.html') ?>
+            </div>
+            <div class="tab-box">
+                <!-- 相關活動 -->
+                <?php include('_item2.html') ?>
+            </div>
+            <div class="tab-box">
+                <!-- 互動 -->
+            </div>  
+            <div class="tab-box">
+                <!-- FAQ -->
+                4
+            </div>  
+            <div class="tab-box">
+                <!-- 捐款名單 -->
+                5
+            </div>     
+        </div>
+        <div class="prod-right">
+            <script src="SRC/js/_other-buy.js"></script>
+        </div>        
+    </div>
+
+    
+
+</main>
+
+<script src="SRC/js/footer.js"></script>

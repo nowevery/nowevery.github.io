@@ -1,0 +1,17 @@
+document.write("<!DOCTYPE html>");
+document.write("<html lang=\"zh-Hant-TW\">");
+document.write("  <head>");
+document.write("<div class=\"product_menu\">");
+document.write("    <form action=\"search.html\">");
+document.write("        <input type=\"text\" placeholder=\"產品搜尋\" name=\"search\"> <button type=\"submit\">搜尋<\/button>");
+document.write("    <\/form>");
+document.write("    <h1 class=\"pageTitle\">產品分類<\/h1>");
+document.write("    <!-- 顯示當前分類 -->");
+document.write("    <div class=\"m_class\">JL系列<i class=\"fas fa-arrow-circle-down\"><\/i><\/div>");
+document.write("    <!-- 顯示當前分類 END-->");
+document.write("    <a href=\"\">JS系列<\/a>");
+document.write("    <a href=\"\">JL系列<\/a>");
+document.write("    <a href=\"\">JA系列<\/a>");
+document.write("    <a href=\"\">JBS系列<\/a>        ");
+document.write("");
+document.write("<\/div>");

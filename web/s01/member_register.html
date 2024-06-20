@@ -1,0 +1,106 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header.js"></script>
+<main class="member inner">
+    <div class="bread"><a href="index"><i class="fas fa-home"></i></a><span class="bread-space">/</span>會員註冊</div>
+    <div class="container max550">
+        <div class="member-login-nav">
+          <a href="member_login.html">會員登入</a>
+          <a href="member_register.html" class="active">會員註冊</a>
+        </div>
+        <div class="member-login-content">
+        <form action="member_area.html" class="form-style">
+            <div class="form-top-text">＊為必填</div>
+            <div class="form_flex">
+                <input type="email" name="email" placeholder="Email ( 登入帳號 )＊">          
+            </div>           
+            <div class="form_flex">
+                <input type="password" placeholder="密碼＊">
+            </div>
+            <div class="form_flex">
+                <input type="password" placeholder="請再次輸入密碼＊">
+            </div>
+            <div class="form_flex">
+                <input type="text" placeholder="姓名＊">
+            </div>
+            <div class="form_flex input-row">
+                <span>性別＊</span>
+                <label><input type="radio" name="sex"><span><i class="fas fa-check"></i>男</span></label>
+                <label><input type="radio" name="sex"><span><i class="fas fa-check"></i>女</span></label>              
+            </div>
+            <div class="form_flex">
+                <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="手機＊">
+            </div>
+            <div class="form_flex">
+                <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="聯絡電話">
+            </div>
+            <div class="form_flex ">
+                <span>生日＊</span>
+                <input type="date" id="date" name="birthday">
+            </div>
+
+            <div class="form_flex a-t">
+                <span>住址</span>
+                <div class="address-input w-100">
+                    <div class="address-input">
+                        <div id="twzipcode">
+                        </div>
+                        <input type="text" placeholder="請輸入地址"> 
+                    </div>
+                </div>
+            </div>
+            <div class="read-box">
+                
+                <label for="agree"><input id="agree" type="checkbox" name=""><span><i class="fas fa-check"></i></span>我已詳細閱讀
+                </label>
+                <input type="checkbox" class="hide" id="Terms">
+                <label for="Terms">會員條款</label>
+                <div class="jump">
+                    <div class="jump-box">
+                        <label class="close-bt" for="Terms">X</label>
+                        <div class="jump-title">
+                            會員條款
+                        </div>
+                        <div class="user_editor">
+                            <div class="u-title">
+                            1. 個人資料蒐集、處理及利用說明</div>
+                            本公司可能透過Facebook或類似社群服務系統，於取得您的同意後，將部份本網站的資訊發布於您的社群活動資訊頁面，若您不同意該等訊息之發布，請您勿點選同意鍵，或於事後透過各該社群服務之會員機制移除該等資訊或拒絕本網站繼續發布相關訊息。若有任何問題，仍可與本公司聯絡，本公司將協助您確認、處理相關問題。 除依法應提供予司法、檢調機關、相關主管機關，或與本公司協力廠商為執行相關活動必要範圍之利用外，本公司將不會任意將您的個人資料提供予第三人。 當本公司或本網站被其他第三者購併或收購資產，導致經營權轉換時，本公司會於事前將相關細節公告於本網站，且本公司所擁有之全部或部分使用者資訊亦可能在經營權轉換的狀況下移轉給第三人。
+                             
+                            <div class="u-title">2. Cookie技術</div>
+                            為便於日後辨識，當您使用本網站服務時，本公司可能會在您的電腦上設定與存取Cookie。 您可以透過設定您的個人電腦或上網設備，決定是否允許Cookie技術的使用，若您關閉Cookie時，可能會造成您使用本網站服務時之不便利或部分功能限制。
+                             
+                            <div class="u-title">3. 保密與安全性</div>
+                            本公司之員工，僅於其為您提供產品或服務之需求範圍內，對於您的個人資料得為有限之接觸。 為了保護您的帳戶及個人資料的安全，請您不要任意將個人帳號、密碼提供予第三人或允許第三人以您的個人資料申請帳號、密碼，否則，相關責任由您自行負擔。若您的帳號、密碼有外洩之虞，請您立即更改密碼，或通知本公司暫停該帳號（本公司可能會要求核對您的個人資料）。 網際網路並不是一個安全的資訊傳輸環境，請您在使用本網站時，避免將敏感的個人資料提供予他人或在網站上公開揭露。<br>
+                             
+                            <div class="u-title">4. 未成年人保護</div>
+                            本網站並非特別為未成年人/兒童設計，未成年人使用本網站時，若同意本網站蒐集、利用其個人資訊時，應在法定代理人或監護人之同下為之。法定代理人或監護人得隨時請求本公司停止特定帳號及其相關之個人資料之蒐集、處理及利用行為。<br>
+                             
+                            <div class="u-title">5. 隱私權政策之修改</div>
+                            隱私權政策如經修改，本網站將以您所提供之電子郵件或簡訊通知您相關之重大變更，並於本網站公告。若您不同意該等變更或修改，請停止繼續使用本網站服務，並依本隱私權政策規定通知本公司停止蒐集、處理及利用您的個人資料。
+
+                        </div>
+                        <label id="agree2" for="Terms" class="btn2">我已詳細閱讀並同意</label>
+                    </div>
+                </div>  
+            </div>
+            <div class="form_flex code_inline">
+                <input type="text" placeholder="驗證碼＊">        
+                <img src="SRC/images/demo/verification_bemo.jpg" alt="">
+                <button type="button">
+                    <i class="fas fa-redo"></i>
+                </button>                       
+            </div>
+
+            <div  class="exclamation"><b class="tip-o"><i class="fas fa-exclamation-circle"></i></b>Email、姓名、性別、生日、註冊後即無法修改</div>
+
+            <div class="j-s">
+                <button type="reset" class="btn s1">重新填寫</button>
+                <button type="submit" class="btn s2">確定註冊</button>
+            </div>
+        </form>         
+        </div>     
+    </div>
+
+</main>
+
+<script src="SRC/js/_footer.js"></script>
+

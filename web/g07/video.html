@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+
+  <div class="main_top"></div> 
+  <div class="page-banner wow fadeIn">
+    <picture>
+      <source media="(min-width: 800px)" srcset="images/demo/SSEC-web-banner.png">
+      <img src="images/demo/pcweb-banner.png" alt="">
+    </picture>
+    <div class="banner_ttbox">
+      <h2>影音專區</h2>
+    </div>
+  </div>
+  <main>    
+    <section class="box-1 wow fadeIn">
+      <div class="content">
+        <div class="news03 video-box">
+          <ul>
+            <?php for($i=0; $i < 12; $i++) {  ?>
+              <li>
+                <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=WP6P1QlJkhI">
+                  <div class="geeks02">
+                    <div class="pic"><img src="images/demo/news02.jpg"></div>
+                  </div>  
+                  <div class="ttbox"> 
+                    <h2>影片名稱</h2> 
+                  </div>
+                </a> 
+              </li>                    
+             <?php } ?>
+          </ul>
+        </div>
+        <div class="pagebox">
+          <div class="page">
+            <a href="javascript: void(0)">&lt;</a>
+            <a href="#?page=1" class="current">1</a>
+            <a href="#?page=2">2</a>
+            <a href="#?page=3">3</a>
+            <a href="#?page=4">4</a>
+            <a href="#?page=5">5</a>
+            <a href="javascript: void(0)">&gt;</a>
+          </div>  
+          <div class="page02">
+            <span>Page</span>
+            <input type="text" class="input-style" style="width: 80px;">
+          </div>  
+        </div>
+      </div>
+    </section>    
+  </main>
+
+
+
+
+  <script src="_foot.js"></script>
+

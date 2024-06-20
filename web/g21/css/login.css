@@ -1,0 +1,366 @@
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;  
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: #999;
+	}
+
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+	    color: #999;
+	}
+
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+	    color: #999;
+	}
+
+
+.Sign-title {
+    text-align: center;
+    font-size: 26px;
+    color: #000;
+}
+
+.sky-form .icon-append, .sky-form .icon-prepend {
+    color: #6d6d6d;
+}
+
+[type=text]:focus {
+    border: 1px solid #CACACA;
+    background-color: transparent;
+    box-shadow: 0 0 0px transparent;
+}
+
+.sign-sub-title {
+    text-align: right;
+    font-size: 16px;
+    display: table-cell;
+    position: relative;
+    top: 1px;
+    right: -1px;
+}
+
+.sign-input {
+    height: 40px;
+    display:table-cell;
+    width: 270px;
+    font-size: 14px
+}
+
+.sign-bt {
+    border: 1px solid #fff;
+    color: #fff;
+    width: 95%;
+    padding: 8px 10px;
+    display: inline-block;
+    margin: 10px 0px;
+    background: #D0121B;
+    font-size: 16px;
+}
+
+.sign-bt:hover {
+	background: #D0121B;
+    border: 1px solid #D0121B;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.sign-bt1{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 10px;width: 95%;display: inline-block;
+    margin: 10px 0px;    background: #FDD000;
+    font-size: 16px;
+}
+
+.sign-bt1:hover {
+	background: #FDD000;
+    border: 1px solid #FDD000;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*table*/
+
+
+#demo-table,.css-table{
+	width: 99.9%;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#demo-table td, #demo-table th{
+	padding: 5px;
+}
+
+#demo-table td{
+	color: #666666;
+	border: #fff 1px solid;
+}
+
+#demo-table th{
+	background-color:#ec5840;
+	color:#ffffff;
+	border: #fff 1px solid;
+	text-align: center;
+}
+
+.pic-shop{
+	height: 100px;
+	display: block;
+	margin: 0 auto
+}
+
+.quantity{
+	width: 45px;
+    display: block;
+    margin: 0 auto;
+    height: 32px;
+    font-size: 14px;
+}
+
+table img{
+	height: 100px;	display: block;
+	margin: 0 auto;
+}
+table{text-align:center;}
+
+@media only screen and (max-width: 735px) {
+	table{text-align:left;}
+	table img{
+	margin: 0;
+	}
+	.quantity{margin: 0;}
+	table tbody, table tfoot, table thead {
+    border: 0px solid #f1f1f1;
+}
+}
+
+@media only screen and (max-width: 720px) {
+
+	/* Force table to not be like tables anymore */
+	.break-table{
+		background-color: transparent !important;  
+	}
+	.break-table, 
+	.break-table thead, 
+	.break-table tbody, 
+	.break-table th, 
+	.break-table td, 
+	.break-table tr { 
+		display: block; 
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.break-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	.break-table tr { border: 1px solid #ccc; margin-bottom: 10px; background-color: #ffffff;}
+
+	.break-table td { 
+		/* Behave  like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;  
+		position: relative;
+		padding-left: 35% !important; 
+		white-space: normal;
+		text-align:left;
+	}
+
+	.break-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		color: #1a1a1a;
+	}
+	.break-table td:before { content: attr(data-title); }
+
+	}
+
+	table tbody tr:nth-child(even) {
+    background-color: #FFFCEF;
+	}
+
+
+/*shopping*/
+
+
+.orderStep {
+	clear: both;
+	display: inline-block;
+	height: auto;
+	padding: 0;
+	margin: 30px 0 50px;
+	width: 100%;
+}
+.orderStep li {
+	display: inline-block;
+	float: left;
+	height: auto;
+	margin: 0;
+	min-height: 55px;
+	padding: 0;
+	width: 33.3%;
+}
+.orderStep li.active a {
+	color: #fff;
+}
+.orderStep li.active a {
+	position: relative;
+	background: rgb(253, 208, 0);
+}
+.orderStep li.active a:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-width: 10px;
+	margin-left: -10px;
+	border-top-color: #FDD000  !important;
+}
+.orderStep li a {
+	background: rgba(253, 208, 0, 0.2);
+	display: inline-block;
+	font-size: 14px;
+	height: 100%;
+	line-height: normal;
+	padding: 20px 0 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.orderStep li a i {
+    background: rgba(253, 208, 0, 0.35);
+    color: #FDAF00;
+}
+.orderStep li.active a i {
+	background:#D0121B;
+	color: #FFFFFF;
+}
+.orderStep li a i {
+	border-radius: 0;
+	display: block;
+	font-size: 20px;
+	height: auto;
+	left: 0;
+	line-height: 40px;
+	margin-top: -20px;
+	padding: 0;
+	text-align: center;
+	width: auto;
+	float: none !important;
+}
+
+.orderStep .active a span {
+	display: block;
+	padding: 5px 0;
+	color: #000;
+}
+
+.orderStep li a span {
+	display: block;
+	padding: 5px 0;
+	color: #FDAF00;
+}
+ul{
+	margin: 0;
+}
+
+.shop-bt{
+	border: 1px solid #FDC700;
+    background: #FDC700;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.shop-bt:hover{
+	border: 1px solid #FDC700;
+    background: #fff;
+    color: #FDC700;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.shop-bt1{
+	border: 1px solid #D0121B;
+    background: #D0121B;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.shop-bt1:hover{
+	border: 1px solid #D0121B;
+    background: #fff;
+    color: #D0121B;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.shoppingbt{
+	border: 1px solid #ccc;
+	padding: 5px 15px;
+	color: #000;
+	background: #fff;
+	margin: 20px;
+}
+
+.shoppingbt:hover,.shoppingbt2:hover{
+	color: #fff;
+    /* opacity: 0.7; */
+    background: #D0121B;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #D0121B;
+}
+.shoppingbt2{
+	border: 1px solid #ccc;
+	padding: 5px 15px;
+	color: #000;
+	background: #fff;
+	margin-right: 20px
+}
+
+.shop-footer{
+	padding: 20px 0;
+    display: block;
+    margin-bottom: 50px;
+    background:rgba(241, 241, 241, 0.49);
+}
+
+.and-td{
+	border-bottom: 1px solid #e5e5e5 !important;
+    background: #fff;
+}
+
+
+/*member*/

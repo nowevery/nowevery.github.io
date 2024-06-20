@@ -1,0 +1,10 @@
+document.writeln('<!--left--> ');
+document.writeln('        <section class="left">');
+document.writeln('          <ul class="page-left-menu">');
+document.writeln('            <div class="pd_title">產品展示</div>');
+document.writeln('            <li><a href="products02.html">TS系列</a></li>');
+document.writeln('            <li><a href="products02.html">JL系列</a></li>   ');
+document.writeln('            <li><a href="products02.html">分類由後台建立</a></li>  ');
+document.writeln('          </ul><!-- //page-left-menu -->');
+document.writeln('        </section>');
+document.writeln('        <!--//left--> ');

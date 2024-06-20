@@ -1,0 +1,52 @@
+<script src="header.js"></script>
+<main class="inner">
+	<div class="contact-info">
+		<h1 class="font35">Contact Us Online</h1>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7276.707913537397!2d120.71379900000001!3d24.229396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346919e2c1ff626d%3A0xd0f009e8694186b4!2sNo.%2047%2C%20Xianghe%20Rd%2C%20Tanzi%20District%2C%20Taichung%20City%2C%20Taiwan%20427!5e0!3m2!1sen!2sus!4v1607670971978!5m2!1sen!2sus" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<div class="info-right">
+			<div><img class="logo-pic" src="public/SRC/images/logo.svg"></div>
+			<div><i class="fas fa-map-marker-alt"></i>No. 47, Xianghe Rd., Tanzi Dist., Taichung City 42741, Taiwan (R.O.C.)</div>
+			<div><img src="public/SRC/images/tel.svg"><a href="tel:+8864862741">+886-4-2537-5672</a></div>
+			<div><i class="fas fa-fax"></i>+886-4-2538-8836</div>
+			<div><img src="public/SRC/images/mail.svg"><a href="mailto:sales@mail.gigatek.com.tw">sales@mail.gigatek.com.tw</a></div>
+		</div>
+	</div>
+	<form class="form-box" id="commentForm">
+		<div class="title">Contact Form</div>
+		<div class="text"><span class="tip-icon">*</span> Note: These fields are required.</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Company Name</div><input type="text" name="contactname" required  value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Phone</div><input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder=""  required  name="tel" value="">
+		</div>
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Email</div><input type="email" name="email" placeholder="" required>
+		</div>
+
+		<div class="row">
+			<div class="line-flex"><span class="tip-icon">*</span>Comments</div><textarea name="comments" required></textarea>
+		</div>
+		<div class="row">
+			Verification code
+			<div class="code">
+				<input name="code" required onkeyup="this.value=this.value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+				<span>
+					<img src="public/SRC/images/verification_demo.jpg"><i class="fas fa-redo"></i>
+				</span>
+			</div>
+		</div>
+		<div class="">
+			<button type="reset" class="btn">Rewrite</button>
+			<button type="submit" class="btn">submit</button>
+		</div>
+	</form>
+</main>
+<nav class="bread">
+	<div class="inner">
+		<a href="index.php">Home</a><span class="bread-space">/</span>Contact Us Online		
+	</div>
+
+</nav>
+<script src="footer.js"></script>

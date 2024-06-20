@@ -1,0 +1,120 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_login.js"></script>
+<main class="member">
+    <div class="inner row j-s w1200">        
+        <script src="SRC/js/_member-left.js"></script>
+        <div class="right-column-content">
+            <div class="member-right-title text-center">
+                會員資料修改
+            </div>
+            <div  class="member-progress-tip  text-center"><i class="fas fa-info-circle"></i>請保持您的訊息為最新，只有在需要與您聯繫或得獎了，我們才會使用它!
+                <div class="tip-text"><span class="">＊</span>必填</div>
+            </div>
+            <form class="form-style" action="">
+                <div class="input-row">
+                    <span>Email帳號</span>
+                    <input type="email" name="email" placeholder="Email帳號" value="weloveyou@letschange.cc" disabled="">         
+                </div>
+                <div class="input-row file-box">
+                    <span>上傳頭像</span>
+                    
+                        <img id="preview-img" src="SRC/images/Not-uploaded.jpg" />
+                        <div  class="tip-text" >※限jpg、png、gif，尺寸200 x 200像素</div>
+                       <input name="progressbarTW_img" type="file" id="file-img" accept="image/gif, image/jpeg, image/png"/ >
+                    
+                </div>
+                <div class="input-row">
+                    <span><b class="tip-o">＊</b>姓名</span>
+                    <input type="text" placeholder="請輸入您的姓名" >
+                </div>
+                <div class="input-row">
+                    <span><b class="tip-o">＊</b>性別</span>
+                    <div class="sex-row">
+                        <input type="radio" name="Sex" id="Sex1" value="male" checked="" class="hide">
+                        <label for="Sex1">&ensp;男</label>&emsp;&emsp;
+                        <input type="radio" name="Sex" id="Sex2" value="male"  class="hide">
+                        <label for="Sex2">&ensp;女</label>                   
+                    </div>
+                </div>
+                <div class="input-row">
+                    <span><b class="tip-o">＊</b>生日</span>
+                    <input type="date" id="date" name="birthday">       
+                </div>
+                <div class="input-row">
+                    <span><b class="tip-o">＊</b>手機</span>
+                    <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="0955000000">
+                </div>
+                <div class="input-row">
+                    <span>聯絡電話</span>
+                    <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="0955000000">
+                </div>
+
+                <div class="input-row">
+                    <span>住址</span>
+                    <div class="address-input">
+                        <div id="twzipcode" class="j-s">
+                        </div>
+                        <input type="text" placeholder="請輸入地址"> 
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <span>密碼</span>
+                    <input type="password" class="password" placeholder="請輸入密碼" value="12345678">
+                    <i class="far fa-eye-slash show_pass"></i>
+                </div>
+                <div class="input-row">
+                    <span>確認密碼</span>
+                    <input type="password" class="password" placeholder="請再次輸入密碼" value="12345678">
+                    <i class="far fa-eye-slash show_pass"></i>
+                </div>
+                <div class="checkbox-row">
+                   <input type="checkbox" name="" id="Email"  class="hide"><label for="Email">訂閱電子報</label> 
+                </div>
+                <div class="input-row code_inline">
+                    <span><b class="tip-o">＊</b>驗證碼</span>
+                    <div>
+                        <input type="text" placeholder="請輸入驗證碼">        
+                        <img src="SRC/images/verification_demo.jpg" alt="">
+                        <button type="button">
+                            <i class="fas fa-redo"></i>
+                        </button>                   
+                    </div>          
+                </div>
+                <button type="submit" class="member-btn">確定修改</button>
+            </form>
+                
+        </div>
+    </div>
+</main>
+
+<script src="SRC/js/footer.js"></script>
+
+<script>
+
+$('#file-img').change(function(){
+
+  readURL(this);
+
+});
+
+function readURL(input){
+
+  if(input.files && input.files[0]){
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+
+       $("#preview-img").attr('src', e.target.result);
+
+    }
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+
+
+ $('#twzipcode').twzipcode();
+
+</script>

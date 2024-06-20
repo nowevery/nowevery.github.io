@@ -1,0 +1,180 @@
+<meta charset="UTF-8">
+<script src="_head.js"></script>
+<!--TAB效果-->
+<link href="SRC/css/tab.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').click(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+<!--//TAB效果-->
+<!--QA效果-->
+<script type="text/javascript">
+	$(function(){
+		// 幫 div.qa_title 加上 hover 及 click 事件
+		// 同時把兄弟元素 div.qa_content 隱藏起來
+		$('#qaContent ul.accordionPart li div.qa_title').hover(function(){
+			$(this).addClass('qa_title_on');
+		}, function(){
+			$(this).removeClass('qa_title_on');
+		}).click(function(){
+			// 當點到標題時，若答案是隱藏時則顯示它；反之則隱藏
+			$(this).next('div.qa_content').slideToggle();
+		}).siblings('div.qa_content').hide();
+
+		// 全部展開
+		$('#qaContent .qa_showall').click(function(){
+			$('#qaContent ul.accordionPart li div.qa_content').slideDown();
+			return false;
+		});
+
+		// 全部隱藏
+		$('#qaContent .qa_hideall').click(function(){
+			$('#qaContent ul.accordionPart li div.qa_content').slideUp();
+			return false;
+		});
+	});
+</script>
+<!--//QA效果-->
+  <div class="page-banner" style="background-image: url('images/demo/banner01.jpg')"></div>
+  <div class="breadbox">
+    <ul class="bread-crumbs">
+      <li><a href="index.html">首頁</a></li>
+      <li>常見問題</li>
+    </ul>
+  </div>
+  <main  class="box-2 pa-l-wrap ">
+    <h1 class="title-h1">常見問題<span>Q&A</span></h1>
+      <div class="right-box">
+    		<div class="tab_content">
+              <!--qa-->
+              <section id="qaContent">
+                <div class="btn"><a href="#" class="qa_showall">全部展開</a> <a href="#" class="qa_hideall">全部隱藏</a></div>
+                <ul class="accordionPart">
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          <img src="images/demo/ind_banner02.jpg">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度750px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="qa_title"><b>Q</b>機械是在做什麼的?</div>
+                    <div class="qa_content">
+                      <div class="user-editor">
+                        <div class="w15">
+                          隨著時代的進步，機械科技所展現的內容早已超越了齒輪、傳動機構、挖土機、腳踏車、汽車等基礎工業的製造。它是包羅萬象的，由機械類的商品(如冷氣機、冰箱、除濕機、馬達、瓦斯熱水器、太陽能熱水器、太陽電池發電系統等)，到產業機械(如機器人、半導體生產設備、化工製程設備、土木建設機械等等)，或者是電子產品硬體(如硬碟機、光碟機、鍵盤、散熱風扇等等)，處處可見到機械的影子，為何機械一直被認為是「工業之母」的道理就在此。
+                          <p class="r15">※此區為圖文編輯器，可由後台新增/編輯，圖片寬高不限，建議寬度1090px<br></p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <!--//qa-->
+    		</div>               
+      </div>  
+  </main>
+  <script src="_foot.js"></script>

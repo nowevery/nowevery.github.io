@@ -1,0 +1,18 @@
+document.writeln('<div class="order-menu">');
+document.writeln('	<div class="order-menu-a">');
+document.writeln('		<a href="member_order.html"><i class="fas fa-clipboard"></i>全部訂單</a>		');
+document.writeln('	</div>');
+document.writeln('	<div class="order-menu-a">');
+document.writeln('		<a href="member_order_pay.html"><i class="fas fa-wallet"></i>待付款</a>');
+document.writeln('	</div>');
+document.writeln('	<div class="order-menu-a">');
+document.writeln('		<a href="member_order_send.html"><i class="fas fa-truck"></i>待出貨</a>');
+document.writeln('	</div>');
+document.writeln('	<div class="order-menu-a">');
+document.writeln('		<a href="member_order_receipt.html"><i class="fas fa-gift"></i>待收貨</a>');
+document.writeln('	</div>');
+document.writeln('	<div class="order-menu-a">');
+document.writeln('		<a href="member_order_return.html"><i class="fas fa-sync-alt"></i>退換貨</a>');
+document.writeln('	</div>');
+document.writeln('');
+document.writeln('</div>');

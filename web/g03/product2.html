@@ -1,0 +1,125 @@
+<meta charset="utf-8">
+<script src="header.js"></script>
+<div class="page-banner" style="background-image: url('SRC/images/page-banner.png'); ">
+    <div class="page-banner-info in"><h1>Products</h1></div>
+</div>
+  <div class="content">    
+    <div class="inner">
+        <ul class="breadcrumb"><li><a href="index.html"><i class="fas fa-home"></i></a></li><li><a href="product.html">products</a></li><li><a href="product2.html">General Pump</a></li></ul>
+        <div  class="row-content">
+            <div class="m-b-menu">
+                <div class="m-advanced one-ellipsis"><i class="fas fa-search-plus"></i>Advanced search</div>
+                <div class="m-menu one-ellipsis"><i class="far fa-minus-square"></i>Product menu</div>
+            </div>
+
+            <div class="row-menu ">
+                
+                <div class="pro-search hide-1024">
+                    Advanced search
+                    <form action="search.html">
+                        <select id="catogory">
+                            <option>Catogory</option>
+                            <option>General Pump</option>
+                            <option>Engineering Pump</option>
+                            <option>High Tech. Pump</option>
+                        </select>
+                        <input id="Usage" type="text" name="" placeholder="Usage">
+                        <input type="text" name="" placeholder="Max Flow">
+                        <input type="text" name="" placeholder="Max Head">
+                        <button>search</button>
+                    </form>
+                    <div class="m-close show-1024">x</div>
+                </div>
+                <div class="hide-1024 m-menu-list">
+                    <div class="m-scroll">
+                    <!-- 一個分類--> 
+                    <div class="sub-title">General Pump</div>
+                    <div class="sub-title-drop" >
+                        <!-- 當前頁面加 active class  -->
+                        <a href="product2.html" class="active">PI-Z-D  Series</a>
+                        <a href="product2.html">PX  Series</a>
+                        <a href="product2.html">PX-F  Series</a>
+                        <a href="product2.html">PX-N  Series</a>
+                        <a href="product2.html">PX-D  Series</a>
+                        <a href="product2.html">PX-D-F  Series</a>
+                        <a href="product2.html">PX-D-N  Series</a>
+                    </div>
+                    <!-- 一個分類 END--> 
+
+                    <div class="sub-title">Engineering Pump</div>
+                        <div class="sub-title-drop" >
+                        <a href="product2.html">PX-SP  Series</a>
+                        <a href="product2.html">PS-SP  Series</a>
+                        <a href="product2.html">PS-N  Series</a>
+                    </div>
+
+                    <div class="sub-title">High Tech. Pump</div>
+                    <div class="sub-title-drop" >
+                        <a href="product2.html">PH  Series</a>
+                        <a href="product2.html">PM  Series</a>
+                    </div>
+                                            
+                    </div>
+                    <div class="m-close show-1024">x</div> 
+                </div>            
+            </div>
+            <div class="row-box">
+                <h2 class="row-box-title">General Pump</h2>
+                <h3 class="row-box-sub">PI-Z-D  Series</h3> 
+                <div class="row-content">
+                    <a class="pro-item" href="product-view.html">
+                        <span><img src="SRC/images/demo/pro-1.png"></span>
+                        <p>NH-5PI-Z-D</p>
+                    </a>
+                    <a class="pro-item" href="product-view.html">
+                        <span><img src="SRC/images/demo/pro-1.png"></span>
+                        <p>NH-5PI-Z-D</p>
+                    </a> 
+                    <a class="pro-item" href="product-view.html">
+                        <span><img src="SRC/images/demo/pro-1.png"></span>
+                        <p>NH-5PI-Z-D</p>
+                    </a> 
+                    <a class="pro-item" href="product-view.html">
+                        <span><img src="SRC/images/demo/pro-1.png"></span>
+                        <p>NH-5PI-Z-D</p>
+                    </a>                  
+                </div>
+                <div class="page-number">
+                    <a href=""><i class="fas fa-angle-double-left"></i></a><a class="active" href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href=""><i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>             
+        </div>
+       
+    </div>
+
+
+  </div>
+
+
+
+<script src="footer.js"></script>
+
+<script type="text/javascript" src="SRC/js/jquery-ui.min.js"></script>
+
+
+<script>
+;(function($) {
+var availableTags = [
+    "Tag",
+    "Tag2",
+    "Usage",
+    "Usage2",
+    "Usage3",
+    "Usage4"
+];
+$( "#Usage" ).autocomplete({
+    source: availableTags
+});
+
+$( "#catogory" ).selectmenu();
+
+
+
+})($)
+
+</script>

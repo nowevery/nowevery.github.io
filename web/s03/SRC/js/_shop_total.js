@@ -1,0 +1,12 @@
+document.writeln('	<div class="row">');
+document.writeln('		<div class="text">小計</div><div class="text2">$9,939</div>');
+document.writeln('	</div>');
+document.writeln('	<div class="row">');
+document.writeln('		<div class="text">運費</div><div class="text2">$60</div>');
+document.writeln('	</div>');
+document.writeln('	<div class="row">');
+document.writeln('		<div class="text">手續費</div><div class="text2">$10</div>');
+document.writeln('	</div>');
+document.writeln('	<div class="total">');
+document.writeln('		<div class="text">總計</div><div class="text2">$9,999</div>');
+document.writeln('	</div>');

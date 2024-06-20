@@ -1,0 +1,411 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Toolguide Industral Co., Ltd.</title>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="css/ss-gizmo.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+     <link href="css/select.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+        #ss2 {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-box input:-ms-input-placeholder,
+        .contact-box textarea:-ms-input-placeholder {
+            color: transparent;
+            font-size: 13px;
+        }
+
+        .contact-box input::-webkit-input-placeholder,
+        .contact-box textarea::-webkit-input-placeholder {
+            color: transparent;
+            font-size: 13px;
+        }
+
+
+        textarea {
+            min-height: 80px;
+            font-size: 13px;
+        }
+
+        @media screen and (min-width: 40em) {
+            .medium-7 {
+                width: 57.33333%;
+            }
+        }
+
+        .columns:last-child:not(:first-child) {
+            float: right !important;
+        }
+
+        textarea:focus {
+            outline: none !important;
+            box-shadow: 0px 0px 0px rgba(255, 235, 59, 0.39) !important;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active 
+        {
+        -webkit-box-shadow: 0 0 0px 1000px #fefefe inset; /*淡淡的白*/
+        transition: background-color 5000s ease-in-out 0s; /*透明*/
+        -webkit-text-fill-color: #000; /*字體顏色*/
+        }
+
+        textarea:focus{
+            color: #000;
+        }
+    </style>
+
+</head>
+<body>
+    
+        <div  style="width: 100%;position: fixed;background: #fff;z-index: 999999;" id="top-bar">
+            <!-- Header -->
+            <header  class=" row">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Toolguide" height="26"></a></div>
+                        
+                        <!-- Nav -->
+                        <nav id="nav">
+                            
+                            <!-- Search -->
+                            <div class="search-include" style="margin-top: 50px; margin-bottom: 30px;">
+                                <div class="search-button">
+                                    <a href="#"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="popup-search" id="uuui">
+                                    <input name="" type="text" id="txtTITLE" class="ft" placeholder="search">
+                                    <input type="submit" name="" value="" id="btnSEND" class="fs">
+                                </div>
+                            </div>
+                            <!-- /Search -->
+                            
+                            <!-- Main Menu -->
+
+                            <ul class="sf-menu dropdown menu" data-dropdown-menu style="margin-top: 48px; margin-bottom: 30px;">
+                                <li class="sf">
+                                    <a href="product.html" class="sf-with-ul" style="cursor: default">TRAILERS<span class="sf-sub-indicator"> »</span></a>
+                                    <ul>
+                                        <li style="width: 101px;"><a href="product.html" >Utility trailer</a></li>
+                                        <li><a href="product.html">Box trailer</a></li>
+                                        <li><a href="product.html">Jet-ski trailer</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sf">
+                                    <a href="product2.html" class="sf-with-ul" style="cursor: default">ACCESSORIES<span class="sf-sub-indicator"> »</span></a>
+                                    <ul style="">
+                                        <li><a href="product2.html">Trailer accessories</a></li>
+                                        <li><a href="product2.html">Car accessories</a></li>
+                                        <li><a href="product2.html">Motorbike accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sf">
+                                    <a href="NEWS.html" class="sf-with-ul" style="cursor: default">NEWS<span class="sf-sub-indicator"></a>
+                                    <ul style="">
+                                        <li><a href="NEWS.html">Life</a></li>
+                                        <li><a href="NEWS.html">Fans</a></li>
+                                        <li><a href="NEWS.html">Media</a></li>
+                                        <li><a href="NEWS.html">Videos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sf">
+                                    <a href="login.html" >MEMBER</a>
+                                    
+                                </li>
+                                <li class="sf"><a href="Contact.html">CONTACT</a></li>
+                            </ul>
+                            <!-- /Main Menu -->
+                            
+                            <!-- Mobile Nav Toggler -->
+                            <div class="nav-toggle">
+                                <a href="#"></a>
+                            </div>
+                        </nav>
+                        <!-- /Nav -->
+            </header>
+            <!-- /Header -->
+        </div>
+    <div class=" row">
+            <!-- Header -->
+            <header id="">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" height="26"></a></div>
+                
+                <!-- Mobile Menu -->
+                <div class="mobile-menu">
+                    <div class="mobile-menu-inner">
+                        <ul>
+                            <li>
+                                <a href="product.html"><i class="fa fa-caret-right"></i>TRAILERS</a>
+                                <ul>
+                                    <li><a href="product.html"><i class="fa fa-caret-right"></i>Utility trailer</a></li>
+                                    <li><a href="product.html"><i class="fa fa-caret-right"></i>Box trailer</a></li>
+                                    <li><a href="product.html"><i class="fa fa-caret-right"></i>Jet- ski trailer</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="product2.html"><i class="fa fa-caret-right"></i>ACCESSORIES</a>
+                                <ul>
+                                    <li><a href="product2.html"><i class="fa fa-caret-right"></i>Trailer accessories</a></li>
+                                    <li><a href="product2.html"><i class="fa fa-caret-right"></i>Car accessories</a></li>
+                                    <li><a href="product2.html"><i class="fa fa-caret-right"></i>Motorbike accessories</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="NEWS.html"><i class="fa fa-caret-right"></i>NEWS</a>
+                                <ul>
+                                    <li><a href="NEWS.html"><i class="fa fa-caret-right"></i>Life</a></li>
+                                    <li><a href="NEWS.html"><i class="fa fa-caret-right"></i>Fans</a></li>
+                                    <li><a href="NEWS.html"><i class="fa fa-caret-right"></i>Media</a></li>
+                                    <li><a href="NEWS.html"><i class="fa fa-caret-right"></i>Videosr</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="login.html"><i class="fa fa-caret-right"></i>MEMBER</a>
+                            </li>
+                            <li>
+                                <a href="Contact.html"><i class="fa fa-caret-right"></i>CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Mobile Menu -->        
+            </header>
+            <!-- /Header -->
+    </div>    
+    <!-- 內容-->    
+<div class="columns pa">
+    <div class="columns con-page-title">
+        <div class="row">
+            <div class="columns">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <div class="row contact">
+        <div class="columns medium-5">
+            <div class="columns contact-box">
+                <div class="columns" style="margin: 1px 0 20px 0; font-size: 18px;">
+                    <img src="img/from.svg" style="margin-bottom: 6px;"><div style="font-size: 12px; color: #EB0708; font-weight: 100;"><b class="red-mark">※ </b>Required information</div>
+                </div>
+
+                <div class="columns" style="position: relative;">
+
+                    <div style="display: inline-block;position: absolute;top: 5px;left: 3px;"><b class="red-mark">※</b></div>
+                   <select name="" ID="ddlX1" Class="ddlX1">
+                        <option value="0">Subject</option>
+                        <option value="1">Business inquiry</option>
+                        <option value="2">Request for quotation</option>
+                        <option value="3">Technical support</option>
+                    </select> 
+                </div>
+                <div class="columns con-line">
+                    <label><b class="red-mark">※</b> Company</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                </div>
+                <div class="columns con-line">
+                    <label><b class="red-mark">※</b> Name</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                </div>   
+                <div class="columns con-line">
+                    <label><b class="red-mark">※</b> Phone</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                </div>
+                <div class="columns con-line">
+                    <label>E-mail</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                </div>
+                <div class="columns con-line">
+                    <label>Address</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                </div> 
+                
+                
+                <div class="columns con-line">
+                    <label style=" width: 90px; "><b class="red-mark">※</b>  COMMENTS</label>
+                    <textarea ></textarea>
+                </div>
+                <div class="columns con-line" style="position: relative;">
+                    <img style="height: 39px;position: absolute;right: 0px;top: -10px;" src="img/ValidateNumber.jpg" width="100" alt="Captcha image" name="imgCode" onclick="">
+                    <label><b class="red-mark">※</b> Code</label>
+                    <span class="spantext"><input name="" type="text" class="required"></span>
+                   
+                </div>
+                    
+                
+                <div class="columns">
+                    
+                    <input type="submit" name=" " value="SENT" id="CPC_btnSave" class="contact-bt Save">
+                </div>
+            </div>
+            
+        </div>
+        <div class="columns medium-7">
+            <div class="columns contact-box">
+                <div class="columns" style="font-size: 18px;padding-bottom: 10px;border-bottom: 1px solid #000;position: relative;padding: 0 0 10px;margin-bottom: 10px;"><img src="img/Contact.svg">
+                    <div style="display: block;height: 1px;width: 155px;background: #ff0000;position: absolute;top: 30px;"></div>
+                </div>
+                <div class="columns">
+                    <div class="con-info columns">
+                        <div class="con-icon" style="padding: 11px 13px;"><i class="ss-location"></i></div>
+                        <div class="right-info">
+                            <h6>Office Address</h6>
+                            <div class="con-add" >NO.31.Alley 10.Lane 489,Ming Te Str.,Hua Tan.Chang Hua 503,Taiwan.</div>
+                        </div>
+                        
+                    </div>
+                    <div class="con-info columns" style="border-right: 0px;">
+                        <div class="con-icon" style="padding: 11px 13px;position: relative;"><i class="ss-home" aria-hidden="true"></i></div>
+                        <div class="right-info">
+                            <h6>Factory Address</h6>
+                            <div class="con-add">Yintang Industrial Area, Changtai County<br>Zhangzhou City Fujian Province, China.</div>
+                        </div>
+                    </div>
+                    <div class="con-info columns" style="border-bottom: 1px;">
+                        <div class="con-icon" style="padding: 11px 13px;"><i class="ss-mail" aria-hidden="true"></i></div>
+                        <div class="right-info">
+                            <h6>Email ID's</h6>
+                            <div class="con-add">dennis730322@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="con-info columns" style="border: 0px solid #fff;">
+                        <div class="con-icon" style="padding: 11px 13px;top: 7px;position: relative;"><i class="ss-phone" aria-hidden="true"></i></div>
+                        <div class="right-info">
+                            <h6>Phone Number</h6>
+                            <div class="con-add">886-4-7873018</div>
+                        </div>
+                    </div>
+                    
+                    <div class="columns"><div id="map" class="columns"></div></div>
+            </div>
+
+                
+               
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+    <!-- 內容 end-->    
+
+    <div class="columns footer">
+        <div class="row">
+            <ul class="footer-item"><div style="color: #cccccc;">TRAILERS</div>
+                <li><a href="product.html">Utility trailer</a></li>
+                <li><a href="product.html">Box trailer</a></li>
+                <li><a href="product.html">Jet- ski trailer</a></li>
+            </ul>
+            <ul class="footer-item"><div style="color: #cccccc;">ACCESSORIES</div>
+                <li><a href="product2.html">Trailer accessories</a></li>
+                <li><a href="product2.html">Car accessories</a></li>
+                <li><a href="product2.html">Motorbike accessories</a></li>
+            </ul>
+            <ul class="footer-item"><div style="color: #cccccc;">NEWS</div>
+                <li><a href="NEWS.html">Life</a></li>
+                <li><a href="NEWS.html">Fans</a></li>
+                <li><a href="NEWS.html">Media</a></li>
+                <li><a href="NEWS.html">Videos</a></li>
+            </ul>
+            <ul class="footer-item"><a href="login.html">MEMBER</a></ul>
+            <ul class="footer-item"><a href="Contact.html">CONTACT</a></ul>
+            <div class="logo2">
+                <a href="img/tuvlogo2.jpg" class="fancybox" style="background: transparent;display: block;border: 0px solid #e3e3e3;" title="TÜV Rheinland certified"><img src="img/tuvlogo.png" style="width: 214px;display: block;margin-bottom: 40px;"></a>
+                
+                <div style="display:inline-block; width: 300px;    position: relative;">
+                    <img src="img/qr.png" style="max-width: 95px;padding-left: 5px;    margin-right: 25px;">
+                    <div style="display:inline-block;" class="c-text">© Toolguide Industral Co., Ltd.<br>All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="js/jquery.select.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            //表單驗證
+            $(".Save").click(function () {
+                var check = true;
+                $(".required").each(function () {
+                    if ($(this).val() == "") {
+                        //alert($(this).parent().find("label").text() + "不可空白");
+                        alert("Fields " + $(this).attr("placeholder") + " is required");
+                        $(this).focus();
+                        check = false;
+                        return false;
+                    }
+                });
+                if (check) {
+                    var reg = /^\w+((-\w+)|(\.\w+))*\@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,5}){1,3})$/; //E-mail驗證
+                    var reg1 = /^(09)\d{8}$/;//手機驗證
+                    var reg2 = /^[0-9]+$/;//驗證包含數字的字串
+                    var reg3 = /^(?=^.{6,12}$)((?=.*[0-9])(?=.*[a-z|A-Z]))^.*$/;//密碼驗證(6~12字元,包含數字或英文大小寫)
+                    var txtuser_email = $("#<%=email.ClientID%>").val();
+                    if (!reg.test(txtuser_email)) {
+                        alert('Email is badly formed');
+                        check = false;
+                        return false;
+                    }
+                    else {
+                    }
+                }
+                return check;
+            });
+
+        });
+
+        $(function () {
+            $(".ddlX1").select({
+                width: "200px"
+            });
+        });
+        $(".sf").eq(4).addClass("current");
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: { lat: 24.0212194, lng: 120.5307499 },
+
+            });
+
+            var image = 'img/map.png';
+            var beachMarker = new google.maps.Marker({
+                position: { lat: 24.0212194, lng: 120.5307499 },
+                map: map,
+                icon: image,
+                title: 'TOOLGUIDE INDUSTRIAL CO.,LTD'
+            });
+
+            // var hh2 = $("#hh2").outerHeight();
+            //   $('#hh1').outerHeight( hh2 );
+
+            //   var ss2 = $("#ss2").outerHeight();
+            //   if( document.body.clientWidth >= 640){
+            //    $('#ss1').outerHeight( ss2 );
+            //   }
+        }
+
+
+    
+
+    </script>
+
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7s1JpHlkIrbeEXwX4niudNmnA4UXgx2c&amp;callback=initMap" type="text/javascript"></script>
+       <script src="js/foundation.min.js"></script>   
+    <script src="js/app.js"></script>

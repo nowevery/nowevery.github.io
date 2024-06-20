@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.w15{
+	font-size: 15px;
+	color:#333;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+	line-height:2;
+}
+.w30{
+	font-size: 30px;
+	color:#000;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+}
+.r15{
+	font-size: 15px;
+	color:#96948a;
+	font-weight:normal;
+	text-decoration:none;
+	font-style: normal;	
+	line-height:2;
+}

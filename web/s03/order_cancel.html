@@ -1,0 +1,35 @@
+<div class="order-jump O-c-j" action="">
+	<div class="order-jump-inner">
+		<div class="jump-x">X 關閉</div>
+		<div class="m-scroll">
+			<form>
+				<div class="title">取消訂單</div>
+				<div class="form_flex l-30"><span>姓名</span>張先生</div>	
+				<div class="form_flex">
+					<span>Email</span>					
+					<input type="email" name="email" placeholder="請輸入聯絡Email">
+				</div>
+				<div class="form_flex"><span>聯絡電話</span>
+					<input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="聯絡電話">
+				</div>
+				<select>
+					<option>選擇取消原因</option>
+					<option>賣家不回應</option>
+					<option>賣家要求取消訂單</option>
+					<option>修改訂單內容(例如:規格)</option>
+					<option>對商品由疑慮/商品評價不佳</option>
+					<option>賣家出貨太慢</option>
+					<option>其他(例如:不想買了、發現更便宜的價格..)</option>
+				</select>
+				<div class="form_flex">
+					<span>取消訂單原因</span>
+					<textarea placeholder="請輸入您的取消原因"></textarea>
+				</div>
+				<div class="f-s">
+					<button type="reset" class="btn1">重新填寫</button>
+					<button type="submit" class="btn2">確定取消</button>
+				</div>		
+			</form>
+		</div>	
+	</div>
+</div>

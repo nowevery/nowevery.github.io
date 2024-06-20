@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_login.js"></script>
+<main class="member member-order">
+	<script src="SRC/js/_member_top.js"></script>
+	<div class="inner member-area">
+		<script src="SRC/js/_member_left_menu.js"></script>
+		<div class="member-right">
+			<script src="SRC/js/_member_order_menu.js"></script>
+			
+			<div class="member-order-box">			
+				<div class="order-item">
+						<div class="order-item-info">
+							<div class="order-pic"><img src="SRC/images/demo/pr1.jpg" alt=""></div>
+							<div class="order-info">
+								<div class="order-info-left">
+									<div class="order-no">訂單編號：20182723410</div>
+									<div>訂購日期：2020-09-01</div>
+									<div>付款方式：ATM匯款</div>
+								</div>
+								<div class="order-info-right">
+									<div class="order-mode">待付款</div>
+									<div class="order-price price">$9,999</div>	
+								</div>
+							</div>						
+						</div>
+						<div class="order-item-btn">
+							<div class="Order-ask b-a">訂單詢問</div><div class="b-a gold">已填寫付款回覆</div><div class="Order-cancel b-a">取消訂單</div><a href="order-detail.html">查看訂單</a>
+						</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>	
+
+</main>
+
+
+<!-- 訂單詢問 -->
+<?php include('order_ask.html') ?>
+
+<!-- 匯款回覆 -->
+<?php include('order_reply.html') ?>
+
+<!-- 取消訂單 -->
+<?php include('order_cancel.html') ?>
+
+<nav class="inner bread"><a href="index.html"><i class="fas fa-home"></i></a><span class="bread-space">/</span><a href="member.html">會員專區</a><span class="bread-space">/</span>訂單查詢</nav>
+<script src="SRC/js/_footer_login.html"></script>

@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+<script src="SRC/js/_header_login.js"></script>
+<style>
+	input[type=radio]:after{
+		top: 0;
+	}
+</style>
+<main class="member member-account">
+	<script src="SRC/js/_member_top.js"></script>
+	<div class="inner member-area">
+		<script src="SRC/js/_member_left_menu.js"></script>
+		<div class="member-right  member-register">
+			<div class="member-page-title">個人資料</div>
+			<div class="tip"><b class="tip-o">＊</b>必填</div>
+			<form class="b-f" action="member_success.html">
+				<div class="form_flex">
+					<span>Email帳號</span>
+					<input type="email" name="email" placeholder="Email帳號"  value="texdon@texdon.com" disabled>			
+				</div>
+				<div class="form_flex">
+					<span><b class="tip-o">＊</b>密碼</span>
+					<input type="password" placeholder="＊密碼" value="12345678">
+				</div>
+				<div class="form_flex">
+					<span><b class="tip-o">＊</b>確認密碼</span>
+					<input type="password" placeholder="請再次輸入密碼" value="12345678">
+				</div>
+				<div class="form_flex">
+					<span><b class="tip-o">＊</b>姓名</span>
+					<input type="text" placeholder="姓名" value="texdon">
+				</div>
+				<div class="form_flex">
+					<span><b class="tip-o">＊</b>性別</span>
+					<div class="w-100">
+						<input type="radio" name="Sex" id="Sex1" value="male" checked>
+						<label for="Sex1">&ensp;男</label>&emsp;&emsp;
+						<input type="radio" name="Sex" id="Sex2" value="male">
+						<label for="Sex2">&ensp;女</label>					
+					</div>
+					
+				</div>
+				<div class="form_flex">
+					<span><b class="tip-o">＊</b>手機</span>
+					<input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="0955000000">
+				</div>
+				<div class="form_flex d-b">
+					<span>生日</span>
+					<div class="w-100">
+						<input type="date" id="date" name="birthday">					
+					</div>
+
+				</div>
+
+				<div class="form_flex">
+					<span>住址</span>
+					<div class="address-input">
+					<div class="address-input w-100">
+						<div id="twzipcode">
+					    </div>
+					    <input type="text" placeholder="請輸入地址">	
+					</div>
+                </div>
+				</div>
+				<div class="form_flex i-checkbox">
+					<label class="far">
+						<input type="checkbox" name="" class="fas">訂閱電子報
+					</label>					
+				</div>
+				<div class="form_flex code_inline">
+					<span><b class="tip-o">＊</b>驗證碼</span>
+					<div class="w-100">
+						<input type="text" placeholder="請輸入驗證碼">		
+						<img src="SRC/images/verification_bemo.jpg" alt="">
+						<button type="button">
+							<i class="fas fa-redo"></i>
+						</button>					
+					</div>
+							
+				</div>
+				<div class="page-btn">
+					<button type="reset" class="btn1">重新填寫</button>
+					<button type="submit" class="btn2">確定送出</button>
+				</div>
+			</form>	
+		</div>
+
+	</div>	
+
+</main>
+
+<nav class="inner bread"><a href="index.html"><i class="fas fa-home"></i></a><span class="bread-space">/</span><a href="member.html">會員專區</a><span class="bread-space">/</span>個人資料</nav>
+<script src="SRC/js/_footer_login.html"></script>
+
+<script type="text/javascript" src="SRC/js/jquery.twzipcode.min.js"></script>
+<script>
+ $('#twzipcode').twzipcode();
+
+</script>

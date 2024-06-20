@@ -1,0 +1,329 @@
+<?php include('_header.php') ?>
+<section>
+    <div class="index-banner">
+        <div>
+            <a href=""  target="_blank">
+            	<picture>
+            		<source media="(max-width: 768px)" srcset="SRC/images/banner-m.jpg"><img src="SRC/images/banner.jpg">
+            	</picture>
+            </a>
+        </div>
+        <div>
+            <a href=""  target="_blank">
+            	<picture>
+            		<source media="(max-width: 768px)" srcset="SRC/images/banner-m2.jpg"><img src="SRC/images/banner2.jpg">
+            	</picture>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- a1 -->
+<div class="anchor" id="a1"></div>
+
+<!-- 1編輯器 -->
+<section class="a1">
+	<div class="row inner">
+		<div class="a1-left">
+			<div class="a1-title">喜婦寧錠Cimidona<span>®</span></div>
+			<div class="a1-text">
+				<div class="sub">有效成分及含量</div>
+				<div class="text">每一錠劑內含有6.5 mg每一顆錠劑內含有6.5 mg Native Black cohosh dry extract (北美升麻根莖部之乾燥萃取物)。</div>
+				<div class="sub">用法用量</div>
+				<div class="text">一天服用一顆，並配水吞服，不可咬碎或咀嚼。 若要服用超過6個月，您應該諮詢您的醫生。 請依照說明書上的建議劑量或醫生指示。</div>
+			</div>
+		</div>
+		<div class="a1-right">
+			<img src="SRC/images/pro.jpg">
+		</div>
+	</div>
+</section>
+
+<!-- a2 -->
+<section class="a2">
+	<div class="inner row">
+		<div class="a2-left">
+			<img src="SRC/images/c1.jpg">
+			<span>醫學中心婦產專科醫師 <span>張宇琪</span></span>
+		</div>
+		<div class="a2-right">
+			<div class="a2-title blue">台灣醫學中心 婦產專科醫師推薦</div>
+			<div class="a2-title green">多元化治療 黑升麻改善症狀</div>
+			<div class="a2-text">Cimidona® 在2005年上市，是一種非荷爾蒙的更年期輔助療法，有效成分北美植物黑升麻萃取物，對於更年期女性的身心幫助很大。病患普遍在一周後的自我評估數據中就反映出緩解幅度！</div>
+		</div>
+	</div>
+</section>
+
+<!-- a3 -->
+<section class="a3">
+	<div class="a3-title inner">
+		<div class="line"></div>
+		<div>歐美醫師愛用推薦</div>
+		<div class="sub">歐洲草本配方  非賀爾蒙製劑唯一選擇</div>
+	</div>
+	<div class="inner row">
+		<div class="a3-i i-1">
+			<div>
+				<span class="pic-img"><img src="SRC/images/favorite-1.jpg"></span>
+				<span>瑞士草藥大廠<br>原廠進口</span>
+			</div>
+			
+		</div>
+		<div class="a3-i i-2">
+			<div>
+				<span class="pic-img"><img src="SRC/images/favorite-2.svg"></span>
+				<span>天然植物成分<br>溫和不刺激</span>
+			</div>
+		</div>
+		<div class="a3-i i-3">
+			<div>
+				<span class="pic-img"><img src="SRC/images/favorite-3.svg"></span>
+				<span>安全<br>非荷爾蒙成分</span>				
+			</div>
+		</div>
+		<div class="a3-i i-4">
+			<div>
+				<span class="pic-img"><img src="SRC/images/favorite-4.svg"></span>
+				<span>中樞系統<br>獨特作用方式</span>				
+			</div>
+		</div>
+		<div class="a3-i i-5">
+			<div>
+				<span class="pic-img"><img src="SRC/images/favorite-5.svg"></span>
+				<span>症狀緩解<span>熱潮紅、出汗、睡眠障礙、
+焦躁以及憂鬱</span></span>				
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- a4 -->
+<section class="a4">
+	<div class="inner row">
+		<div class="box1">
+			<div class="box-top">
+				<img class="a4-img" src="SRC/images/a4-1.svg">
+				<div class="title">藥品級黑升麻</div>
+				<div class="sub">獨特作用機轉不具雌激素作用可安全使用於</div>
+			</div>
+			<div class="item">
+				一般婦女
+				<span>有效緩解更年期複合症狀</span>
+			</div>
+			<div class="item">
+				有子宮肌瘤的婦女
+				<span>避免子宮肌瘤體積增加</span>
+			</div>
+			<div class="item">
+				婦癌相關敏感婦女
+				<span>避免受到雌激素刺激</span>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="box-top">
+				<img class="a4-img" src="SRC/images/a4-2.svg">
+				<div class="title">全台各大醫學中心使用</div>
+				<div class="sub">婦產科 / 乳房外科 / 精神科</div>	
+			</div>
+			<div class="item">
+				市立聯合醫院、臺北市立萬芳醫院、馬偕紀念醫院、奇美醫療財團法人奇美醫院、高雄長庚紀念醫院、高雄榮民總醫院
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- a5 -->
+<section class="a5">
+	<div class="inner">
+		<div class="content">
+			<div class="title">
+				熟齡是女性人生必經的一個階段。有些女性的更年期症狀非常嚴重，影響日常生活、睡眠品質、工作效率，或是人際關係！衛生署統計：
+			</div>
+			<div class="row">
+				<div class="box">
+					症狀持續5年的女性<br>約有<span>56</span>%
+				</div>
+				<div class="box">
+					症狀超過5年的女性<br>約有<span>26</span>%
+				</div>
+			</div>			
+		</div>
+		<img class="a5-pic" src="SRC/images/a5.svg">
+	</div>
+</section>	
+<!-- 1編輯器 end-->
+
+
+<!-- c1 -->
+<div class="anchor" id="c1"></div>
+<!-- 2編輯器 -->
+<section class="c1">
+	<div class="row inner">
+		<div class="c1-title">
+			熟齡女性<br>選擇比一比
+			<img src="SRC/images/c1.svg">
+		</div>
+		<div class="c1-table">
+			<ul class="hide-768">
+				<li>項目</li>
+				<li>成分</li>
+				<li>效果</li>
+				<li>禁忌</li>
+				<li>療程</li>
+			</ul>
+			<ul>
+				<li class="title">傳統補充療法</li>
+				<li>
+					<div class="m-title">成分</div>
+					荷爾蒙製劑
+				</li>
+				<li>
+					<div class="m-title">效果</div>
+					口服或局部外用<br>能有效緩解症狀
+				</li>
+				<li>
+					<div class="m-title">禁忌</div>
+					對荷爾蒙敏感者
+				</li>
+				<li>
+					<div class="m-title">療程</div>
+					$900
+				</li>
+			</ul>
+			<ul>
+				<li class="title">植物性保健品<br>(大豆、紅花苜蓿)</li>
+				<li>
+					<div class="m-title">成分</div>
+					荷爾蒙製劑
+				</li>
+				<li>
+					<div class="m-title">效果</div>
+					療程未能證實
+				</li>
+				<li>
+					<div class="m-title">禁忌</div>
+					對荷爾蒙敏感者
+				</li>
+				<li>
+					<div class="m-title">療程</div>
+					$2000
+				</li>
+			</ul>
+			<ul class="focus">
+				<li class="title">非荷爾蒙天然療法<br>(黑升麻)</li>
+				<li>
+					<div class="m-title">成分</div>
+					非荷爾蒙製劑
+				</li>
+				<li>
+					<div class="m-title">效果</div>
+					口服：適用各族群、安全性高能溫和緩解症狀
+				</li>
+				<li>
+					<div class="m-title">禁忌</div>
+					對植物成分敏感者
+				</li>
+				<li>
+					<div class="m-title">療程</div>
+					$800-1600
+				</li>
+			</ul>
+			<ul>
+				<li class="title">抗憂鬱劑</li>
+				<li>
+					<div class="m-title">成分</div>
+					非荷爾蒙製劑
+				</li>
+				<li>
+					<div class="m-title">效果</div>
+					Off-label Use
+				</li>
+				<li>
+					<div class="m-title">禁忌</div>
+					無針對非憂鬱症患者使用抗憂鬱劑的長期資料
+				</li>
+				<li>
+					<div class="m-title">療程</div>
+					N/A
+				</li>
+			</ul>						
+		</div>
+	</div>
+</section>
+<!-- 2編輯器 end-->
+
+
+<!-- d1 -->
+<div class="anchor" id="d1"></div>
+<!-- 3編輯器-->
+<section class="d1">
+	<div class="inner">
+		<div class="row">
+			<div class="mrs">
+				<div class="mrs-title">更年期評估量表MRS</div>
+				<div class="item">
+					<div class="title-bg">血管舒縮</div>
+					<div>01．熱潮紅、冒汗（陣陣冒汗）</div>
+					<div>02．心臟不適（心悸、心律不整、心絞痛症狀）</div>
+					<div>03．睡眠問題（難以入睡、難以安睡、早早醒來）</div>
+				</div>
+				<div class="item">
+					<div class="title-bg">心理</div>
+					<div>04．憂鬱情緒（感到低落、悲傷、快要流淚、缺乏動力、情緒波動）</div>
+					<div>05．易怒（感到緊張不安、內在壓力、想要打人）</div>
+					<div>06．焦慮（內心煩亂、感到恐懼）</div>
+					<div>07．身心疲憊（能力表現普遍降低、記憶力減退、注意力降低、健忘）</div>
+					<div>08．性交問題（性慾、性生活及性滿意度改變）</div>		
+				</div>
+				<div class="item">
+					<div class="title-bg">生殖系統</div>
+					<div>09．膀胱問題（排尿困難、排尿需求增加、膀胱失禁）</div>
+					<div>10．陰道乾澀（陰道乾澀感或灼熱感、性交困難）</div>
+					<div>11．關節與肌肉不適（關節疼痛、類風濕症狀）</div>
+				</div>
+			</div>
+			<div class="mrs-info">
+				<div>
+					<div class="title">藉由評估表了解一下自己的狀況</div>
+					<div class="sub">針對這11種症狀，分別給予0(無) 4(極嚴重)的評分，然後計算總分：</div>
+					<div class="score">
+						<div>0~5  無／很少抱怨</div>
+						<div>6~9 輕度</div>
+						<div>10~16 中度</div>
+						<div>17~44 重度</div>
+					</div>					
+				</div>
+
+			</div>
+			<img class="d1-pic" src="SRC/images/d1.svg">
+		</div>
+
+	</div>
+</section>
+<!-- 3編輯器 end-->
+
+
+<!-- e1 -->
+<div class="anchor" id="e1"></div>
+<!-- 4編輯器-->
+<section class="e1">
+	<div class="inner">
+		<div class="e1-content">
+			<div class="title30">請洽全省各大連鎖藥局及獨立藥局</div>
+			<div class="title28">諮詢專線 <span>0800-025-188</span></div>
+			<div class="text">
+				台北市信義區松仁路277號17樓<br>
+				service.lotuspharm@gmail.com
+			</div>
+			<div class="text">
+				衛部藥輸字第026341號<br>
+				北市衛藥廣字第110060120號
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 4編輯器 end-->
+
+<?php include('_footer.php') ?>
