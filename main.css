@@ -144,6 +144,7 @@ a {
     margin-bottom: 45px;
     letter-spacing: 10px;
     font-family: 'Gentium Book Plus', serif;
+    display: none;
 }
 
 .left-title .name {
@@ -767,14 +768,14 @@ width: 100%;
         padding: 0;
         position: absolute;
         left: 5%;
-        top: -15px;
+        /*top: -15px;*/
         transform: scale(0.8);
     }
 
     .left-title .name+span {
         font-size: 12px;
         margin-top: 5px;
-        display: block;
+        /*display: block;*/
     }
 
     .left-box-menu a.active {
@@ -854,6 +855,7 @@ width: 100%;
     .left-box>div {
         margin-top: 77px;
         justify-content: center;
+        border-top: 1px solid #f7f7f7;
     }
 
     /*    .left-box>div:after {
@@ -888,7 +890,7 @@ width: 100%;
     }
 
     .left-title {
-        top: -66px;
+        top: -55px;
         left: 50%;
         transform: scale(0.8) translateX(-50%);
     }
@@ -976,13 +978,18 @@ width: 100%;
 
 @media screen and (max-width: 480px) {
     .left-title {
-        transform: scale(0.65) translateX(-75%);
+        transform: scale(0.65) translateX(-75%);top: -50px;
     }
-
+    .left-title .name {
+        font-size: 30px;        
+    }
     .left-box-menu a {
-        font-size: 12px;
-        margin: 0 0 6px;
+        font-size: 13px;
+        /* margin: 0 0 6px; */
         line-height: 30px;
+        padding: 8px;
+        width: 33%;
+        text-align: center;
     }
 
     .left-box-menu {
@@ -1002,7 +1009,7 @@ width: 100%;
     }
 
     .left-box>div {
-        margin-top: 70px;
+        margin-top: 60px;
     }
 
     .show .view-pic {
@@ -1044,8 +1051,8 @@ width: 100%;
 }
 }
 
-@media screen and (max-width: 375px) {
+/*@media screen and (max-width: 375px) {
     .left-box-menu a {
         padding: 0 20px 0 20px;
     }
-}
+}*/
