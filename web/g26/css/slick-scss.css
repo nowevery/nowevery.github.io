@@ -1,0 +1,191 @@
+/* line 5, ../scss/slick-scss.scss */
+.slick-dots li {
+  width: 50px;
+  height: 5px;
+  margin: 0 3.5px;
+  vertical-align: bottom;
+}
+/* line 9, ../scss/slick-scss.scss */
+.slick-dots li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 13, ../scss/slick-scss.scss */
+.slick-dots li.slick-active button {
+  background: #c4201f;
+  height: 5px;
+}
+/* line 16, ../scss/slick-scss.scss */
+.slick-dots li:not(.slick-active) button {
+  height: 2px;
+}
+
+/* line 20, ../scss/slick-scss.scss */
+.slick-list {
+  height: 100%;
+}
+/* line 22, ../scss/slick-scss.scss */
+.slick-list .slick-track {
+  height: 100%;
+}
+
+/* line 26, ../scss/slick-scss.scss */
+.slick-arrow {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  left: auto;
+  margin: 0;
+  z-index: 99;
+}
+/* line 33, ../scss/slick-scss.scss */
+.slick-arrow.slick-disabled {
+  filter: alpha(opacity=30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  opacity: 0.3;
+  pointer-events: none;
+}
+/* line 34, ../scss/slick-scss.scss */
+.slick-arrow:before, .slick-arrow:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: #333;
+}
+/* line 40, ../scss/slick-scss.scss */
+.slick-arrow:before {
+  margin-top: -3.5px;
+}
+/* line 41, ../scss/slick-scss.scss */
+.slick-arrow:after {
+  margin-top: 3.5px;
+}
+@media screen and (max-width: 767px) {
+  /* line 26, ../scss/slick-scss.scss */
+  .slick-arrow {
+    width: 35px;
+    height: 35px;
+  }
+  /* line 45, ../scss/slick-scss.scss */
+  .slick-arrow:before {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* line 51, ../scss/slick-scss.scss */
+.slick-prev, .slick-next {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 55, ../scss/slick-scss.scss */
+.slick-prev {
+  left: 0;
+}
+/* line 56, ../scss/slick-scss.scss */
+.slick-prev:before, .slick-prev:after {
+  margin-left: -1px;
+}
+/* line 57, ../scss/slick-scss.scss */
+.slick-prev:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* line 60, ../scss/slick-scss.scss */
+.slick-prev:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* line 64, ../scss/slick-scss.scss */
+.slick-next {
+  right: 0;
+}
+/* line 65, ../scss/slick-scss.scss */
+.slick-next:before, .slick-next:after {
+  margin-left: 1px;
+}
+/* line 66, ../scss/slick-scss.scss */
+.slick-next:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+/* line 69, ../scss/slick-scss.scss */
+.slick-next:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  /* line 74, ../scss/slick-scss.scss */
+  .slick-dots li {
+    width: 35px;
+    height: 4px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  /* line 78, ../scss/slick-scss.scss */
+  .slick-arrow:hover {
+    -webkit-transform: scale(1, 1) !important;
+    -moz-transform: scale(1, 1) !important;
+    -ms-transform: scale(1, 1) !important;
+    -o-transform: scale(1, 1) !important;
+    transform: scale(1, 1) !important;
+  }
+  /* line 80, ../scss/slick-scss.scss */
+  .slick-arrow:hover:not(.slick-disabled) {
+    transform-origin: center;
+    background: #c8000a;
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  /* line 88, ../scss/slick-scss.scss */
+  .history .slick-arrow:hover {
+    -webkit-transform: scale(1, 1) !important;
+    -moz-transform: scale(1, 1) !important;
+    -ms-transform: scale(1, 1) !important;
+    -o-transform: scale(1, 1) !important;
+    transform: scale(1, 1) !important;
+  }
+
+  /* line 91, ../scss/slick-scss.scss */
+  .slick-dots li:hover button {
+    background: #c4201f;
+    height: 5px;
+  }
+}

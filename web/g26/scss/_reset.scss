@@ -1,0 +1,32 @@
+/* CSS Reset
+-------------------------------------------------------------------------------*/
+html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,img,ins,kbd,q,strong,sub,sup,var,b,i,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,footer,header,menu,nav,video {font-size: 100%; margin: 0; padding: 0; vertical-align: central; border: none;background: transparent; -webkit-text-size-adjust: none;}
+footer,header,nav {display: block;}
+img {max-width: 100%; border: none;}
+ul {list-style: none;}
+a {font-size: 100%; margin: 0; padding: 0; vertical-align: baseline; text-decoration: none; background: transparent;}
+table {width: 100%;border-spacing: 0; border-collapse: collapse;}
+th {font-weight: 500;}
+td {font-weight: normal;}
+hr {display: block; height: 1px; margin: 1em 0; padding: 0;border: none; border-top: 1px solid  #505050;box-sizing: border-box;}
+input,select {vertical-align: middle; }
+input[type='radio'],
+input[type='checkbox'] {vertical-align: middle;}
+.ie6 input {vertical-align: text-bottom;}
+select,input,textarea {font: 100% sans-serif;border-radius:0;}
+*:focus{outline: none;}
+a:hover,a:focus,a:active {text-decoration: none; outline: none;background:inherit}
+sub,sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -.5em;}
+sub {bottom: -.25em;}
+.clickable,label,input[type=button],input[type=submit],button {cursor: pointer;}
+label {vertical-align: middle;}
+button,input,select,textarea {margin: 0;}
+button {overflow: visible;width: auto;}
+::-moz-selection {color: #fff; background: #2367BD; text-shadow: none;}
+::selection {color: #fff; background: #2367BD; text-shadow: none;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
